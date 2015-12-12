@@ -1,0 +1,157 @@
+@import (reference) "core.less";
+
+// #region I Support Jolla Header
+
+body > header {
+    .fullWidth;
+    height: auto;
+    min-height: 300px;
+    color: white;
+    background-color: @primary;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    & > div[data-isupportjolla-component="header-content"]{
+        height: e("calc(300px - 5%)"); // Set height to 300px minus 5% margins
+
+        // #region Scaling
+
+        @media screen and (max-width: 451px){
+            .fullWidth;
+        }
+
+        @media screen and (min-width: 452px){
+            .float;
+            width: 450px;
+            .horizontalAlign(450); // Horizontal align Header Content
+        }
+
+        // #endregion
+
+        // #region Header Logo
+
+        & > div[data-isupportjolla-component="header-logo"]{
+            .float;
+            height: 80px;
+            width: 250px;
+            font-size: 3rem; // 3x root font size
+            line-height: 80px;
+
+            .horizontalAlign(250); // Horizontal align Header Logo Element
+            margin-top: 2.5%;
+            margin-bottom: 2.5%;
+
+            & > img {
+                float: right; // Always float to right in section
+                max-height: 80px;
+            }
+        }
+
+        // #endregion
+
+        // #region Header Description
+
+        & > div[data-isupportjolla-component="header-description"]{
+            .fullWidth;
+            height: 64px;
+            font-size: 1.25rem; // 1.25x root font size
+            text-align: center;
+            line-height: 1.5;
+            margin-bottom: 2.5%;
+
+            & > label {
+                .fullWidth;
+                font-size: 2rem; // 2x root font size
+            }
+        }
+
+        // #endregion
+
+        // #region Header Tweet
+
+        & > div[data-isupportjolla-component="header-tweet"]{
+            .fullWidth;
+            font-size: 1.25rem;
+            text-align: center;
+
+            // #region Tweet Form
+
+            & > div[data-isupportjolla-component="tweet-form"]{
+                .float;
+                @tweetFormHeight: 68;
+
+                height: unit(@tweetFormHeight, px);
+                width: 90%;
+                margin: 2.5% 5% 2.5% 5%; // 2.5% top / bottom, 5% left / right
+
+                // #region Tweet Button Style
+
+                .tweetButtonStyle(){
+                    height: 40px;
+                    color: @primary;
+                    font-size: 1.25rem;
+                    line-height: 40px;
+                    text-decoration: none;
+
+                    cursor: default;
+                    background-color: white;
+                    border: 0;
+                    border-radius: 5px;
+                }
+
+                // #endregion
+
+                // #region Tweet Noscript Handler
+
+                & > noscript {
+                    .fullWidth;
+
+                    & > a { // Tweet Link
+                        .float; // Float left
+                        .tweetButtonStyle; // Add the Tweet Button Style
+                        width: 100px;
+                        .horizontalAlign(100);
+                    }
+                }
+
+                // #endregion
+
+                & > textarea {
+                    .float;
+                    height: unit((@tweetFormHeight - 8), px);
+                    width: 70%;
+
+                    color: @black;
+                    font-size: 1rem;
+                    text-align: left;
+                    resize: none;
+
+                    border: 0;
+                    border-radius: 5px;
+                    padding: 4px;
+
+                    &:active{
+                        border: 0;
+                    }
+                }
+
+                & > a {
+                    float: right;
+                    .tweetButtonStyle; // Add the Tweet Button Style
+                    width: 25%;
+                    margin: 10px 0 10px 0;
+                }
+            }
+
+            // #endregion
+        }
+
+        // #endregion
+    }
+
+    // #endregion
+}
+
+// #endregion

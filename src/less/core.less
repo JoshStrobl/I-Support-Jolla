@@ -17,11 +17,26 @@
     width: 100%; // 100% width (no shit sherlock?)
 }
 
-.horizontalAlign(@elementWidth: 2){
+.horizontalAlign(@elementWidth: 2){ // Horizontally align an Element
     @halfElementWidth : unit((@elementWidth / 2), px);
     @halfElementWidthCalc : "calc(50% - @{halfElementWidth})";
     margin-left: e(@halfElementWidthCalc);
     margin-right: e(@halfElementWidthCalc);
+}
+
+.notice(){ // Notice (and Footer) styling
+    .fullWidth;
+    text-align: center;
+    line-height: 1.8rem;
+    margin-bottom: 2.5%;
+
+    // #region Pretty Red Heart
+
+    & > span{
+        color: @red;
+    }
+
+    // #endregion
 }
 
 // #endregion
