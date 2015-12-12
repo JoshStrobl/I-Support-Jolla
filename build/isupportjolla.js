@@ -20,7 +20,7 @@ var isupportjolla;
                 "height": 400,
                 "border": "#ffffff",
                 "chrome": "noheader,nofooter,noborders,transparent",
-                "tweetLimit": 15
+                "tweetLimit": 8
             });
         }
         else {
