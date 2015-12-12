@@ -1,0 +1,12 @@
+// Our animations
+
+// #region Transition Parametric Mixin
+
+.transition(@properties; @duration : 62){
+	transition: e(@properties) unit(@duration, ms); // String escape the provided properties that'll change in transition
+	-webkit-transition: e(@properties) unit(@duration, ms); // Same as above, just specific to Webkit
+    transition-timing-function: ease-in;
+    -webkit-transition-timing-function: ease-in;
+}
+
+// #endregion

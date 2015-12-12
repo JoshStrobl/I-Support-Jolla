@@ -1,0 +1,27 @@
+// This file contains the appropriate values used across the LESS
+
+@primary : #549090;
+@secondary : #195f5f;
+@link : #0099ff;
+@red : lighten(red, 10%); // Prettier red
+@black : #333333; // Use a calmer dark color
+
+// #region Mixins
+
+.float{ // Float Mixin
+    float: left; // Left float
+}
+
+.fullWidth{ // Full width of parent
+    .float; // Float
+    width: 100%; // 100% width (no shit sherlock?)
+}
+
+.horizontalAlign(@elementWidth: 2){
+    @halfElementWidth : unit((@elementWidth / 2), px);
+    @halfElementWidthCalc : "calc(50% - @{halfElementWidth})";
+    margin-left: e(@halfElementWidthCalc);
+    margin-right: e(@halfElementWidthCalc);
+}
+
+// #endregion

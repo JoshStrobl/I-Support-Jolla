@@ -1,0 +1,42 @@
+@import (reference) "core.less";
+
+// Styling for Letters
+
+div[data-isupportjolla-component="letter"]{
+    .float;
+
+    // #region Author Info
+
+    & > div[data-isupportjolla-component="letter-author"]{
+        .fullWidth;
+        height: 50px;
+        color: @primary;
+        font-size: 1.5rem;
+        line-height: 50px;
+
+        & > img { // Author image
+            .float;
+            height: 50px;
+            width: 50px;
+            border-radius: 50px; // Ensure img is circular
+            margin-right: 1.5%;
+        }
+    }
+
+    // #endregion
+
+    // #region Letter Content
+
+    & > div[data-isupportjolla-component="letter-content"]{
+        .fullWidth;
+        font-size: 1rem;
+
+        & > p { // A paragraph, obviously
+            .fullWidth;
+            line-height: 2rem;
+            margin: 1.5% 0 1.5% 0; // 1.5% margin on top and bottom
+        }
+    }
+
+    // #endregion
+}
