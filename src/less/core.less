@@ -24,8 +24,15 @@
     margin-right: e(@halfElementWidthCalc);
 }
 
-.notice(){ // Notice (and Footer) styling
-    .fullWidth;
+.notice(@fullWidth) when (@fullWidth = true){ // When fullwidth is true
+    .fullWidth; // Use fullWidth
+}
+
+.notice(@fullWidth) when (@fullWidth = false){ // When fullwidth is false
+    .float; // Only use float
+}
+
+.notice(@fullWidth){ // Notice (and Footer) styling
     text-align: center;
     line-height: 1.8rem;
     margin-bottom: 2.5%;
