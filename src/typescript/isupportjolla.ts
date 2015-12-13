@@ -37,7 +37,7 @@ module isupportjolla {
                 "height" : 400,
                 "border" : "#ffffff",
                 "chrome" : "noheader,nofooter,noborders,transparent",
-                "tweetLimit" : 8
+                "tweetLimit" : 10
             });
         } else { // If Twttr is not define, such as being blocked
             sailorFeedTimeline.setAttribute("data-isupportjolla-error", "twttr");
