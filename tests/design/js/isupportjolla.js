@@ -6,9 +6,11 @@ var isupportjolla;
         isupportjolla.tweetFormInput = document.createElement("textarea");
         isupportjolla.tweetFormInput.setAttribute("placeholder", "Input positive tweet with #ISupportJolla");
         isupportjolla.tweetFormInput.setAttribute("maxlength", "140");
+        isupportjolla.tweetFormInput.setAttribute("tabindex", "1");
         isupportjolla.tweetFormButton = document.createElement("a");
         isupportjolla.tweetFormButton.setAttribute("target", "_blank");
         isupportjolla.tweetFormButton.textContent = "Tweet";
+        isupportjolla.tweetFormButton.setAttribute("tabindex", "2");
         isupportjolla.tweetFormArea.appendChild(isupportjolla.tweetFormInput);
         isupportjolla.tweetFormArea.appendChild(isupportjolla.tweetFormButton);
     }

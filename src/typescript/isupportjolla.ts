@@ -16,10 +16,12 @@ module isupportjolla {
         isupportjolla.tweetFormInput = document.createElement("textarea"); // Create a textarea
         isupportjolla.tweetFormInput.setAttribute("placeholder", "Input positive tweet with #ISupportJolla"); // Placeholder
         isupportjolla.tweetFormInput.setAttribute("maxlength", "140"); // Set maxlength to 140 characters
+        isupportjolla.tweetFormInput.setAttribute("tabindex", "1"); // Set tabindex to 1
 
         isupportjolla.tweetFormButton = document.createElement("a"); // Create a link
         isupportjolla.tweetFormButton.setAttribute("target", "_blank"); // Set target to _blank
         isupportjolla.tweetFormButton.textContent = "Tweet"; // Set textContent to Tweet
+        isupportjolla.tweetFormButton.setAttribute("tabindex", "2"); // Set tabindex to 2
 
         isupportjolla.tweetFormArea.appendChild(isupportjolla.tweetFormInput); // Append the textarea
         isupportjolla.tweetFormArea.appendChild(isupportjolla.tweetFormButton); // Append the button
