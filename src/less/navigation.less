@@ -1,0 +1,46 @@
+// This is the styling for the navigation
+@import (reference) "core.less";
+
+div[data-isupportjolla-component="navigation"]{
+    .fullWidth;
+    min-height: 4rem;
+    background-color: lighten(@primary, 1.5%);
+    border-top: 2px solid @darkBlue;
+
+    // #region Scaling
+
+    @media screen and (max-width: 451px){
+        & > a:first-of-type {
+            margin-left: 1.5%;
+        }
+
+        & > a {
+            margin-right: 2.5%;
+        }
+    }
+
+    @media screen and (min-width: 452px){
+        & > a:first-of-type { // First link in navigation
+            margin-left: 5%;
+        }
+
+        & > a {
+            margin-right: 1.5%;
+        }
+    }
+
+    // #endregion
+
+    & > a {
+        .float;
+        height: 4rem;
+        color: white;
+        font-size: 1.16rem;
+        line-height: 4rem;
+        border-bottom: 0;
+
+        &[data-isupportjolla-comingsoon]{ // If this is a Coming Soon link
+            opacity: 0.5;
+        }
+    }
+}

@@ -9,9 +9,6 @@ body > header {
     color: white;
     background-color: @primary;
     overflow: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
 
     & > div[data-isupportjolla-component="header-content"]{
         height: e("calc(300px - 5%)"); // Set height to 300px minus 5% margins
@@ -55,7 +52,7 @@ body > header {
 
         & > div[data-isupportjolla-component="header-description"]{
             .fullWidth;
-            height: 64px;
+            min-height: 64px;
             font-size: 1.25rem; // 1.25x root font size
             text-align: center;
             line-height: 1.5;
@@ -75,6 +72,7 @@ body > header {
             .fullWidth;
             font-size: 1.25rem;
             text-align: center;
+            margin-bottom: 2.5%;
 
             // #region Tweet Form
 

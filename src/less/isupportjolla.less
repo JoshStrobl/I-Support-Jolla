@@ -2,13 +2,19 @@
 @import "core.less";
 @import "header.less";
 @import "letter.less";
+@import "navigation.less";
 
 html {
     font-size: 12px;
 }
 
 body {
+    .fullWidth;
     font-family: "Droid Sans";
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
 
     // #region Links
 
@@ -33,13 +39,15 @@ body {
     // #region Page Content
 
     & > div[data-isupportjolla-component="page"]{
-        margin-top: e("calc(300px + 2.5%)");
+        margin-top: 2.5%;
         margin-bottom: 2.5%;
 
         // #region Scaling
 
         @media screen and (max-width: 1279px){ // Not HD
-            .fullWidth;
+            .float;
+            width: 95%;
+            margin-left: 2.5%;
 
             & > div[data-isupportjolla-component="letter"]{ // Letter
                 width: 100%;
