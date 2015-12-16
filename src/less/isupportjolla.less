@@ -39,9 +39,6 @@ body {
     // #region Page Content
 
     & > div[data-isupportjolla-component="page"]{
-        margin-top: 2.5%;
-        margin-bottom: 2.5%;
-
         // #region Scaling
 
         @media screen and (max-width: 1279px){ // Not HD
@@ -59,7 +56,7 @@ body {
             }
         }
 
-        @media screen and (min-width: 1280px){ // HD or ove
+        @media screen and (min-width: 1280px){ // HD or over
             .float;
 
             & > div[data-isupportjolla-component="letter"]{ // Letter
@@ -72,6 +69,11 @@ body {
             }
         }
 
+        @media screen and (max-width: 1900px){ // Anything basically below FHD
+            margin-top: 2.5%;
+            margin-bottom: 2.5%;
+        }
+
         @media screen and (min-width: 1280px) and (max-width: 1900px){ // HD to almost FHD
             width: 90%;
             margin-left: 5%;
@@ -80,14 +82,12 @@ body {
 
         @media screen and (min-width: 1901px) and (max-width: 2549px){ // Basically FHD+ (yes, I know FHD is 1920px in width, shut up)
             width: 70%;
-            margin-left: 15%;
-            margin-right: 15%;
+            margin: 1.5% 15% 1.5% 15%; // 1.5% margin on top and bottom, 15% on sides
         }
 
         @media screen and (min-width: 2550px){ // Okay now you're just showing off. Stahp.
             width: 50%;
-            margin-left: 25%;
-            margin-right: 25%;
+            margin: 1.5% 25% 1.5% 25%; // 1.5% margin on top and bottom, 25% on sides
         }
 
         // #endregion

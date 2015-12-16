@@ -9,23 +9,45 @@ div[data-isupportjolla-component="navigation"]{
 
     // #region Scaling
 
-    @media screen and (max-width: 451px){
+    @media screen and (max-width: 400px){
         & > a:first-of-type {
             margin-left: 1.5%;
         }
+    }
 
-        & > a {
-            margin-right: 2.5%;
+    @media screen and (min-width: 401px) and (max-width : 1279px){ // Horizontal mobile to "almost" HD
+        & > a:first-of-type {
+            margin-left: 2.5%;
         }
     }
 
-    @media screen and (min-width: 452px){
+    @media screen and (max-width: 1279px){ // Anything below HD
+        & > a {
+            margin-right: 2.5%; // Increased margin on right to reduce difficulty in touch targets
+        }
+    }
+
+    @media screen and (min-width: 1280px) { // HD and higher
+        & > a {
+            margin-right: 1.5%;
+        }
+    }
+
+    @media screen and (min-width: 1280px) and (max-width: 1900px){ // HD to almost FHD
         & > a:first-of-type { // First link in navigation
             margin-left: 5%;
         }
+    }
 
-        & > a {
-            margin-right: 1.5%;
+    @media screen and (min-width: 1901px) and (max-width: 2549px){ // Basically FHD+ (yes, I know FHD is 1920px in width, shut up)
+        & > a:first-of-type { // First link in navigation
+            margin-left: 15%;
+        }
+    }
+
+    @media screen and (min-width: 2550px){ // Okay now you're just showing off. Stahp.
+        & > a:first-of-type { // First link in navigation
+            margin-left: 25%;
         }
     }
 
