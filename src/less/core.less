@@ -19,6 +19,16 @@
     width: 100%; // 100% width (no shit sherlock?)
 }
 
+.headerStyle(@height : 3, @fontSize : 2){ // Styling for different header levels
+    .fullWidth;
+    height: auto;
+    min-height: unit(@height, rem);
+    color: @secondary;
+    font-size: unit(@fontSize, rem);
+    font-weight: normal;
+    line-height: unit(@height, rem);
+}
+
 .horizontalAlign(@elementWidth: 2){ // Horizontally align an Element
     @halfElementWidth : unit((@elementWidth / 2), px);
     @halfElementWidthCalc : "calc(50% - @{halfElementWidth})";
@@ -40,5 +50,48 @@
     margin-bottom: 2.5%;
 
 }
+
+// #endregion
+
+// #region Global Styling
+
+body {
+
+    // #region Headers
+
+    h1 { // Header level-1
+        .headerStyle();
+        margin: 0 0 2.5% 0; // Only 2.5% margin on bottom
+    }
+
+    h2 { // Header level-2
+        .headerStyle(2, 1.4);
+        margin: 1.5% 0 5% 0; // 1.5% margin on top and 5% margin on bottom
+    }
+
+    // #endregion
+
+    // #region Links
+
+    a { // Any Link
+        color: @link;
+        text-decoration: none;
+        border-bottom: 2px solid @link;
+    }
+
+    // #endregion
+
+    // #region Span Styling
+
+    span{
+        &[type="heart"]{ // Heart coloring
+            color: @red;
+        }
+    }
+
+    // #endregion
+}
+
+// #endregion
 
 // #endregion

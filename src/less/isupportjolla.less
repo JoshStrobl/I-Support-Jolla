@@ -3,6 +3,7 @@
 @import "header.less";
 @import "letter.less";
 @import "navigation.less";
+@import "sidepane.less";
 
 html {
     font-size: 12px;
@@ -16,26 +17,6 @@ body {
     left: 0;
     margin: 0;
 
-    // #region Links
-
-    & a { // Any Link
-        color: @link;
-        text-decoration: none;
-        border-bottom: 2px solid @link;
-    }
-
-    // #endregion
-
-    // #region Span Styling
-
-    span{
-        &[type="heart"]{ // Heart coloring
-            color: @red;
-        }
-    }
-
-    // #endregion
-
     // #region Page Content
 
     & > div[data-isupportjolla-component="page"]{
@@ -46,26 +27,16 @@ body {
             width: 95%;
             margin-left: 2.5%;
 
-            & > div[data-isupportjolla-component="letter"]{ // Letter
+            & > div[data-isupportjolla-component="primary-content"]{ // Primary Content
                 width: 100%;
-            }
-
-            & > div[data-isupportjolla-component="social-area"]{ // Social Area
-                .fullWidth; // What is this thing called social life?
-                margin-top: 2.5%;
             }
         }
 
         @media screen and (min-width: 1280px){ // HD or over
             .float;
 
-            & > div[data-isupportjolla-component="letter"]{ // Letter
-                width: e("calc(100% - 600px)"); // 500px width of social feed plus spacing
-            }
-
-            & > div[data-isupportjolla-component="social-area"]{ // Social Area
-                float: right;
-                width: 500px;
+            & > div[data-isupportjolla-component="primary-content"]{ // Primary Content
+                width: e("calc(100% - 600px)"); // 100% width minus width of social feed plus spacing
             }
         }
 
@@ -92,6 +63,14 @@ body {
 
         // #endregion
 
+        // #region Primary Content Area
+
+        & > div[data-isupportjolla-component="primary-content"]{
+            .float;
+        }
+
+        // #endregion
+
         // #region Notice
 
         & > div[data-isupportjolla-component="notice"]{
@@ -102,64 +81,6 @@ body {
             border-left: 10px solid @secondary;
             padding-top: 1.8rem;
             padding-bottom: 1.8rem;
-        }
-
-        // #endregion
-
-        // #region Headers
-
-        .headerStyle(@height : 3, @fontSize : 2){
-            .fullWidth;
-            height: auto;
-            min-height: unit(@height, rem);
-            color: @secondary;
-            font-size: unit(@fontSize, rem);
-            font-weight: normal;
-            line-height: unit(@height, rem);
-        }
-
-        & h1 { // Header level-1
-            .headerStyle();
-            margin: 0 0 2.5% 0; // Only 2.5% margin on bottom
-        }
-
-        & h2 { // Header level-2
-            .headerStyle(2, 1.4);
-            margin: 1.5% 0 5% 0; // 1.5% margin on top and 5% margin on bottom
-        }
-
-        // #endregion
-
-        // #region Social Area
-
-        & > div[data-isupportjolla-component="social-area"]{
-            & > div[data-isupportjolla-component="sailor-feed"],
-            & > div[data-isupportjolla-component="sailfish-os"]{
-                .fullWidth;
-                margin-bottom: 5%;
-
-                div[data-isupportjolla-component="sailor-feed-timeline"]{ // Timeline Widget
-                    .fullWidth;
-
-                    &[data-isupportjolla-error]{ // If there is an error for the Timeline
-
-                        color: white;
-                        text-align: center;
-                        background-color: @secondary;
-                    }
-
-                    &[data-isupportjolla-error="js"]{ // If Javascript is disabled
-                        height: 4rem;
-                        line-height: 2rem;
-                        padding: 2rem 0 2rem 0; // 2rem top / bottom
-                    }
-
-                    &[data-isupportjolla-error="twttr"]{ // If Twitter is blocked
-                        height: 200px;
-                        line-height: 200px;
-                    }
-                }
-            }
         }
 
         // #endregion
