@@ -55,11 +55,26 @@ div[data-isupportjolla-component="navigation"]{
 
     & > a {
         .float;
-        height: 4rem;
         color: white;
         font-size: 1.16rem;
         line-height: 4rem;
-        border-bottom: 0;
+
+        &[active], &:hover { // If this is the active link or we're hovering over the link
+            height: e("calc(4rem - 3px)");
+        }
+
+        &[active]:not(:hover){ // If this is the active link
+            border-bottom: 3px solid @darkBlue;
+        }
+
+        &:hover { // If we are hovering over this link
+            border-bottom: 3px solid white;
+        }
+
+        &:not([active]):not(:hover){ // If this is not the active link or a link we're hovering over
+            height: 4rem;
+            border-bottom: 0;
+        }
 
         &[data-isupportjolla-comingsoon]{ // If this is a Coming Soon link
             opacity: 0.5;

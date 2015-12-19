@@ -24,23 +24,6 @@ div[data-isupportjolla-component="sidepane"]{
 
         div[data-isupportjolla-component="sailor-feed-timeline"]{ // Timeline Widget
             .fullWidth;
-
-            &[data-isupportjolla-error]{ // If there is an error for the Timeline
-                color: white;
-                text-align: center;
-                background-color: @secondary;
-            }
-
-            &[data-isupportjolla-error="js"]{ // If Javascript is disabled
-                height: 4rem;
-                line-height: 2rem;
-                padding: 2rem 0 2rem 0; // 2rem top / bottom
-            }
-
-            &[data-isupportjolla-error="twttr"]{ // If Twitter is blocked
-                height: 200px;
-                line-height: 200px;
-            }
         }
     }
 

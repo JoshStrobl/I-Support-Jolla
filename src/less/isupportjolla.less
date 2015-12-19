@@ -1,7 +1,8 @@
 @import "animations.less";
 @import "core.less";
+@import "errors.less";
 @import "header.less";
-@import "letter.less";
+@import "letters.less";
 @import "navigation.less";
 @import "sidepane.less";
 
@@ -20,10 +21,11 @@ body {
     // #region Page Content
 
     & > div[data-isupportjolla-component="page"]{
+        .float;
+
         // #region Scaling
 
         @media screen and (max-width: 1279px){ // Not HD
-            .float;
             width: 95%;
             margin-left: 2.5%;
 
@@ -33,8 +35,6 @@ body {
         }
 
         @media screen and (min-width: 1280px){ // HD or over
-            .float;
-
             & > div[data-isupportjolla-component="primary-content"]{ // Primary Content
                 width: e("calc(100% - 600px)"); // 100% width minus width of social feed plus spacing
             }

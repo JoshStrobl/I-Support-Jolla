@@ -57,16 +57,30 @@
 
 body {
 
+    // #region Div
+
+    div {
+        &[show]{
+            display : block;
+        }
+
+        &[hide]{
+            display: none;
+        }
+    }
+
+    // #endregion
+
     // #region Headers
 
     h1 { // Header level-1
         .headerStyle();
-        margin: 0 0 2.5% 0; // Only 2.5% margin on bottom
+        margin: 0; // No margin
     }
 
     h2 { // Header level-2
         .headerStyle(2, 1.4);
-        margin: 1.5% 0 5% 0; // 1.5% margin on top and 5% margin on bottom
+        margin: 1rem 0 1rem 0; // Fixed margin on headers rather than scaling based on percentage of parent
     }
 
     // #endregion

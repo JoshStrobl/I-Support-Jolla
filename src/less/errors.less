@@ -1,0 +1,28 @@
+@import (reference) "core.less";
+
+// This is the styling for errors in I Support Jolla
+
+div[data-isupportjolla-error]{
+    .fullWidth;
+    color: white;
+    text-align: center;
+    background-color: @secondary;
+
+    &[data-isupportjolla-error="js"], &[data-isupportjolla-error="server-unreachable"]{ // If Javascript is disabled or Server is unreachable
+        height: 4rem;
+        padding: 2rem 0 2rem 0; // 2rem top / bottom
+    }
+
+    &[data-isupportjolla-error="js"]{ // If Javascript is disabled
+        line-height: 2rem;
+    }
+
+    &[data-isupportjolla-error="server-unreachable"]{ // If Server is unreachable
+        line-height: 4rem;
+    }
+
+    &[data-isupportjolla-error="twttr"]{ // If Twitter is blocked
+        height: 200px;
+        line-height: 200px;
+    }
+}
