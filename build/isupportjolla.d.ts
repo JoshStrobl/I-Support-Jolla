@@ -32,7 +32,9 @@ declare module isupportjolla.twitter {
     var Form: any;
     var FormInput: any;
     var FormButton: any;
+    function Init(): void;
     function GenerateForm(): void;
+    function GenerateSailfishPhotoGrid(): void;
     function GenerateTimeline(): void;
     function TrackInput(): void;
 }

@@ -164,6 +164,17 @@ var isupportjolla;
 (function (isupportjolla) {
     var twitter;
     (function (twitter) {
+        function Init() {
+            isupportjolla.twitter.GenerateForm();
+            isupportjolla.twitter.FormInput.addEventListener("input", isupportjolla.twitter.TrackInput);
+            if (window.location.toString().indexOf("sailfish") == -1) {
+                isupportjolla.twitter.GenerateTimeline();
+            }
+            else {
+                isupportjolla.twitter.GenerateSailfishPhotoGrid();
+            }
+        }
+        twitter.Init = Init;
         function GenerateForm() {
             isupportjolla.twitter.Form = document.querySelector('div[data-isupportjolla-component="tweet-form"]');
             isupportjolla.twitter.FormInput = document.createElement("textarea");
@@ -178,19 +189,39 @@ var isupportjolla;
             isupportjolla.twitter.Form.appendChild(isupportjolla.twitter.FormButton);
         }
         twitter.GenerateForm = GenerateForm;
+        function GenerateSailfishPhotoGrid() {
+            var sailfishExperienceTimeline = document.querySelector('div[data-isupportjolla-component="sailfish-experience-timeline"]');
+            if (sailfishExperienceTimeline !== null) {
+                if ((typeof twttr !== "undefined") && (typeof twttr.widgets !== "undefined")) {
+                    twttr.widgets.createGridFromCollection('678194475089444864', sailfishExperienceTimeline, {
+                        "height": 400,
+                        "border": "#ffffff",
+                        "chrome": "noheader,nofooter,noborders,transparent",
+                        "limit": 10
+                    });
+                }
+                else {
+                    var errorElement = isupportjolla.errors.CreateError("twttr", "Twitter widget being blocked by browser. Lemme guess, Ghostery?");
+                    sailfishExperienceTimeline.appendChild(errorElement);
+                }
+            }
+        }
+        twitter.GenerateSailfishPhotoGrid = GenerateSailfishPhotoGrid;
         function GenerateTimeline() {
             var sailorFeedTimeline = document.querySelector('div[data-isupportjolla-component="sailor-feed-timeline"]');
-            if ((typeof twttr !== "undefined") && (typeof twttr.widgets !== "undefined")) {
-                twttr.widgets.createTimeline('675772340106608640', sailorFeedTimeline, {
-                    "height": 400,
-                    "border": "#ffffff",
-                    "chrome": "noheader,nofooter,noborders,transparent",
-                    "tweetLimit": 10
-                });
-            }
-            else {
-                sailorFeedTimeline.setAttribute("data-isupportjolla-error", "twttr");
-                sailorFeedTimeline.textContent = "Twitter widget being blocked by browser. Lemme guess, Ghostery?";
+            if (sailorFeedTimeline !== null) {
+                if ((typeof twttr !== "undefined") && (typeof twttr.widgets !== "undefined")) {
+                    twttr.widgets.createTimeline('675772340106608640', sailorFeedTimeline, {
+                        "height": 400,
+                        "border": "#ffffff",
+                        "chrome": "noheader,nofooter,noborders,transparent",
+                        "tweetLimit": 10
+                    });
+                }
+                else {
+                    var errorElement = isupportjolla.errors.CreateError("twttr", "Twitter widget being blocked by browser. Lemme guess, Ghostery?");
+                    sailorFeedTimeline.appendChild(errorElement);
+                }
             }
         }
         twitter.GenerateTimeline = GenerateTimeline;
@@ -212,9 +243,7 @@ var isupportjolla;
     function Init() {
         isupportjolla.PrimaryContent = document.querySelector('div[data-isupportjolla-component="primary-content"]');
         isupportjolla.Sidepane = document.querySelector('div[data-isupportjolla-component="sidepane"]');
-        isupportjolla.twitter.GenerateForm();
-        isupportjolla.twitter.GenerateTimeline();
-        isupportjolla.twitter.FormInput.addEventListener("input", isupportjolla.twitter.TrackInput);
+        isupportjolla.twitter.Init();
         if (window.location.toString().indexOf("letters") !== -1) {
             isupportjolla.letters.Init();
         }

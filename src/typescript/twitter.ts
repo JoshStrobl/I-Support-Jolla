@@ -7,6 +7,19 @@ module isupportjolla.twitter {
     export var FormInput;
     export var FormButton;
 
+    // Init
+    // This function will initiatize the Twitter functionality on the site
+    export function Init(){
+        isupportjolla.twitter.GenerateForm(); // Create the Tweet form
+        isupportjolla.twitter.FormInput.addEventListener("input", isupportjolla.twitter.TrackInput); // Track text input on input of tweetFormInput
+
+        if (window.location.toString().indexOf("sailfish") == -1){ // If we are not on the Sailfish page
+            isupportjolla.twitter.GenerateTimeline(); // Create the Sailor Timeline
+        } else { // If we are on the Sailfish Page
+            isupportjolla.twitter.GenerateSailfishPhotoGrid(); // Generate the Sailfish Photo Grid
+        }
+    }
+
     //  Generate Tweet Form
     export function GenerateForm(){
         isupportjolla.twitter.Form = document.querySelector('div[data-isupportjolla-component="tweet-form"]'); // Get the Tweet Form
@@ -25,20 +38,42 @@ module isupportjolla.twitter {
         isupportjolla.twitter.Form.appendChild(isupportjolla.twitter.FormButton); // Append the button
     }
 
+    // Generate Sailfish Photo Grid
+    // This function will generate the Twitter Grid Collection for the Sailfish OS images
+    export function GenerateSailfishPhotoGrid(){
+        var sailfishExperienceTimeline : Element = document.querySelector('div[data-isupportjolla-component="sailfish-experience-timeline"]'); // Get the Sailfish-specific timeline ELement
+
+        if (sailfishExperienceTimeline !== null){ // If the Full-Width Content Element exists on a Sailfish page
+            if ((typeof twttr !== "undefined") && (typeof twttr.widgets !== "undefined")){ // If Twttr is defined
+                twttr.widgets.createGridFromCollection('678194475089444864', sailfishExperienceTimeline, { // Create the Grid COllection
+                    "height" : 400,
+                    "border" : "#ffffff",
+                    "chrome" : "noheader,nofooter,noborders,transparent",
+                    "limit" : 10
+                });
+            } else { // If Twttr is not define, such as being blocked
+                var errorElement : HTMLDivElement = isupportjolla.errors.CreateError("twttr", "Twitter widget being blocked by browser. Lemme guess, Ghostery?"); // Create a Twitter error message
+                sailfishExperienceTimeline.appendChild(errorElement); // Append the error Element
+            }
+        }
+    }
+
     // Generate Twitter Timelne
     export function GenerateTimeline(){
         var sailorFeedTimeline : Element = document.querySelector('div[data-isupportjolla-component="sailor-feed-timeline"]'); // Get the Sailor Feed Timeline Elemnet
 
-        if ((typeof twttr !== "undefined") && (typeof twttr.widgets !== "undefined")){ // If Twttr is defined
-            twttr.widgets.createTimeline('675772340106608640', sailorFeedTimeline, { // Create the Sailor Feed Timeline
-                "height" : 400,
-                "border" : "#ffffff",
-                "chrome" : "noheader,nofooter,noborders,transparent",
-                "tweetLimit" : 10
-            });
-        } else { // If Twttr is not define, such as being blocked
-            sailorFeedTimeline.setAttribute("data-isupportjolla-error", "twttr");
-            sailorFeedTimeline.textContent = "Twitter widget being blocked by browser. Lemme guess, Ghostery?";
+        if (sailorFeedTimeline !== null){ // If the Sailor Feed Timeline div exists
+            if ((typeof twttr !== "undefined") && (typeof twttr.widgets !== "undefined")){ // If Twttr is defined
+                twttr.widgets.createTimeline('675772340106608640', sailorFeedTimeline, { // Create the Sailor Feed Timeline
+                    "height" : 400,
+                    "border" : "#ffffff",
+                    "chrome" : "noheader,nofooter,noborders,transparent",
+                    "tweetLimit" : 10
+                });
+            } else { // If Twttr is not define, such as being blocked
+                var errorElement : HTMLDivElement = isupportjolla.errors.CreateError("twttr", "Twitter widget being blocked by browser. Lemme guess, Ghostery?"); // Create a Twitter error message
+                sailorFeedTimeline.appendChild(errorElement); // Append the error Element
+            }
         }
     }
 

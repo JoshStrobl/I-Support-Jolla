@@ -16,9 +16,7 @@ module isupportjolla {
         isupportjolla.PrimaryContent = document.querySelector('div[data-isupportjolla-component="primary-content"]');
         isupportjolla.Sidepane = document.querySelector('div[data-isupportjolla-component="sidepane"]');
 
-        isupportjolla.twitter.GenerateForm(); // Create the Tweet form
-        isupportjolla.twitter.GenerateTimeline(); // Create the Twitter Timelines
-        isupportjolla.twitter.FormInput.addEventListener("input", isupportjolla.twitter.TrackInput); // Track text input on input of tweetFormInput
+        isupportjolla.twitter.Init(); // Initialize the Twitter Functionality
 
         if (window.location.toString().indexOf("letters") !== -1){ // If we are on the Letters Page
             isupportjolla.letters.Init(); // Init Letters UX
