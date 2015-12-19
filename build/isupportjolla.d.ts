@@ -1,5 +1,5 @@
 declare module isupportjolla.errors {
-    function CreateError(type: string, message: string): HTMLDivElement;
+    function CreateError(type: string, message: string, autoAppendTo?: any): HTMLDivElement;
 }
 declare var twttr: any;
 interface LetterAuthor extends Object {
@@ -32,7 +32,12 @@ declare module isupportjolla.twitter {
     var Form: any;
     var FormInput: any;
     var FormButton: any;
+    var IsTwitterBlocked: boolean;
+    var IsTwitterBlockedMessage: string;
     function Init(): void;
+    function ActivateLoadPrompt(element: Element, onclickFunc: Function): void;
+    function CreateSailorFeedTimeline(): void;
+    function CreateSailfishExperienceTimeline(): void;
     function GenerateForm(): void;
     function GenerateSailfishPhotoGrid(): void;
     function GenerateTimeline(): void;
@@ -42,4 +47,5 @@ declare module isupportjolla {
     var PrimaryContent: Element;
     var Sidepane: Element;
     function Init(): void;
+    function GetPageWidth(): number;
 }

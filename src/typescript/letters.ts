@@ -125,8 +125,7 @@ module isupportjolla.letters {
                 isupportjolla.PrimaryContent.querySelector('div[data-isupportjolla-component="letters-list-items"]').setAttribute("hide", ""); // Hide the items
                 isupportjolla.letters.PublishedLetterContainer.setAttribute("show", "true"); // Show the Published Letter
             } else { // If responseContent is an object, meaning there was an error
-                var errorDiv : HTMLDivElement = isupportjolla.errors.CreateError("server-unreachable", responseContent["Error"]); // Create an error Element
-                isupportjolla.PrimaryContent.appendChild(errorDiv); // Append the errorDiv to PrimaryContent
+                isupportjolla.errors.CreateError("server-unreachable", responseContent["Error"], isupportjolla.PrimaryContent); // Create an error Element and append to isupportjolla.PrimaryContent
             }
         }.bind(this, letterMetadata); // Bind the metadata
 

@@ -29,8 +29,8 @@
     line-height: unit(@height, rem);
 }
 
-.horizontalAlign(@elementWidth: 2){ // Horizontally align an Element
-    @halfElementWidth : unit((@elementWidth / 2), px);
+.horizontalAlign(@elementWidth : 2px){ // Horizontally align an Element
+    @halfElementWidth: unit((unit(@elementWidth) / 2), get-unit(@elementWidth)); // Set to half the unit (inner unit call gets the number, not unit type like px) and get-unit gets type (ex. px)
     @halfElementWidthCalc : "calc(50% - @{halfElementWidth})";
     margin-left: e(@halfElementWidthCalc);
     margin-right: e(@halfElementWidthCalc);

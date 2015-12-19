@@ -22,4 +22,10 @@ module isupportjolla {
             isupportjolla.letters.Init(); // Init Letters UX
         }
     }
+
+    // GetPageWidth
+    // This function will get the current page width
+    export function GetPageWidth() : number {
+        return document.body.getClientRects()[0].width;
+    }
 }

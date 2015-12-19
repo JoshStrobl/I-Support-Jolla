@@ -1,0 +1,75 @@
+@import (reference) "core.less";
+
+// This is the styling for the Buttons throughout I Support Jolla
+
+// #region Button Mixin
+
+.button(@floatLeft : true, @height: 3.5rem, @width : 12rem, @opposite : false){ // Styling for button
+    height: @height;
+    width: @width;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: @height;
+    text-decoration: none;
+    border-radius: 0.8rem;
+
+    cursor: default;
+}
+
+.button(@floatLeft : true, @height: 3.5rem, @width : 12rem, @opposite : false) when (@floatLeft = false){
+    float: right;
+}
+
+.button(@floatLeft : true, @height: 3.5rem, @width : 12rem, @opposite : false) when (@floatLeft = true){
+    .float;
+}
+
+.button(@floatLeft : true, @height: 3.5rem, @width : 12rem, @opposite : false) when (@opposite = false){
+    color: white;
+    background-color: @primary;
+}
+
+.button(@floatLeft : true, @height: 3.5rem, @width : 12rem, @opposite : false) when (@opposite = true){
+    color: @primary;
+    background-color: white;
+}
+
+// #endregion
+
+// #region Header Tweet Form button
+
+div[data-isupportjolla-component="tweet-form"] {
+
+    & > noscript > a { // Tweet Noscript Handler
+        .button(@opposite: true); // Float left, 3.5rem height, 100px width, opposite styling
+    }
+
+    & > a { // Direct Tweet Form button
+        .button(@floatLeft: false, @width: 25%, @opposite: true); // Float right, 3.5rem height, 25% width, opposite styling
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+// #endregion
+
+// #region Twitter "Load Widget" Button
+
+div[data-isupportjolla-component="button"][data-is-for-twitter]{
+    .button(); // Button styling with normal attributes
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    .horizontalAlign(12rem); // Horizontally align
+
+    @media screen and (max-width: 600px){ // Small mobile device
+        &:not([hide]){ // If we are not trying to hide the button
+            display: block;
+        }
+    }
+
+    @media screen and (min-width: 601px){ // Not a small mobile device
+        display: none;
+    }
+}
+
+// #endregion

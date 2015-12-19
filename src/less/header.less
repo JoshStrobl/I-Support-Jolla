@@ -22,7 +22,7 @@ body > header {
         @media screen and (min-width: 452px){
             .float;
             width: 450px;
-            .horizontalAlign(450); // Horizontal align Header Content
+            .horizontalAlign(450px); // Horizontal align Header Content
         }
 
         // #endregion
@@ -36,7 +36,7 @@ body > header {
             font-size: 3rem; // 3x root font size
             line-height: 80px;
 
-            .horizontalAlign(250); // Horizontal align Header Logo Element
+            .horizontalAlign(250px); // Horizontal align Header Logo Element
             margin-top: 2.5%;
             margin-bottom: 2.5%;
 
@@ -84,34 +84,10 @@ body > header {
                 width: 90%;
                 margin: 2.5% 5% 2.5% 5%; // 2.5% top / bottom, 5% left / right
 
-                // #region Tweet Button Style
-
-                .tweetButtonStyle(){
-                    height: 40px;
-                    color: @primary;
-                    font-size: 1.25rem;
-                    line-height: 40px;
-                    text-decoration: none;
-
-                    cursor: default;
-                    background-color: white;
-                    border: 0;
-                    border-radius: 5px;
-                }
-
-                // #endregion
-
                 // #region Tweet Noscript Handler
 
                 & > noscript {
                     .fullWidth;
-
-                    & > a { // Tweet Link
-                        .float; // Float left
-                        .tweetButtonStyle; // Add the Tweet Button Style
-                        width: 100px;
-                        .horizontalAlign(100);
-                    }
                 }
 
                 // #endregion
@@ -133,13 +109,6 @@ body > header {
                     &:active{
                         border: 0;
                     }
-                }
-
-                & > a {
-                    float: right;
-                    .tweetButtonStyle; // Add the Tweet Button Style
-                    width: 25%;
-                    margin: 10px 0 10px 0;
                 }
             }
 

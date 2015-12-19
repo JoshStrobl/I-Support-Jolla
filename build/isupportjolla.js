@@ -2,10 +2,13 @@ var isupportjolla;
 (function (isupportjolla) {
     var errors;
     (function (errors) {
-        function CreateError(type, message) {
+        function CreateError(type, message, autoAppendTo) {
             var errorDiv = document.createElement("div");
             errorDiv.setAttribute("data-isupportjolla-error", type);
             errorDiv.textContent = message;
+            if (typeof autoAppendTo !== "undefined") {
+                autoAppendTo.appendChild(errorDiv);
+            }
             return errorDiv;
         }
         errors.CreateError = CreateError;
@@ -137,8 +140,7 @@ var isupportjolla;
                     isupportjolla.letters.PublishedLetterContainer.setAttribute("show", "true");
                 }
                 else {
-                    var errorDiv = isupportjolla.errors.CreateError("server-unreachable", responseContent["Error"]);
-                    isupportjolla.PrimaryContent.appendChild(errorDiv);
+                    isupportjolla.errors.CreateError("server-unreachable", responseContent["Error"], isupportjolla.PrimaryContent);
                 }
             }.bind(this, letterMetadata);
             isupportjolla.net.Request("http://isupportjolla.com/letters-api", "POST", { "Action": "get", "LetterId": id }, LetterAPIRequestHandler);
@@ -164,9 +166,11 @@ var isupportjolla;
 (function (isupportjolla) {
     var twitter;
     (function (twitter) {
+        twitter.IsTwitterBlockedMessage = "Twitter widget being blocked by browser. Lemme guess, Ghostery?";
         function Init() {
             isupportjolla.twitter.GenerateForm();
             isupportjolla.twitter.FormInput.addEventListener("input", isupportjolla.twitter.TrackInput);
+            isupportjolla.twitter.IsTwitterBlocked = !((typeof twttr !== "undefined") && (typeof twttr.widgets !== "undefined"));
             if (window.location.toString().indexOf("sailfish") == -1) {
                 isupportjolla.twitter.GenerateTimeline();
             }
@@ -175,6 +179,54 @@ var isupportjolla;
             }
         }
         twitter.Init = Init;
+        function ActivateLoadPrompt(element, onclickFunc) {
+            var loadPromptButton = element.querySelector('div[data-isupportjolla-component="button"][data-is-for-twitter]');
+            if (loadPromptButton !== null) {
+                var activateWidget = function () {
+                    var loadPromptButton = arguments[0];
+                    var onclickFunc = arguments[1];
+                    loadPromptButton.setAttribute("hide", "true");
+                    onclickFunc();
+                }.bind(this, loadPromptButton, onclickFunc);
+                loadPromptButton.removeAttribute("hide");
+                loadPromptButton.addEventListener("click", activateWidget);
+            }
+        }
+        twitter.ActivateLoadPrompt = ActivateLoadPrompt;
+        function CreateSailorFeedTimeline() {
+            var sailorFeedTimeline = isupportjolla.Sidepane.querySelector('div[data-isupportjolla-component="sailor-feed-timeline"]');
+            if (sailorFeedTimeline !== null) {
+                if (!isupportjolla.twitter.IsTwitterBlocked) {
+                    twttr.widgets.createTimeline('675772340106608640', sailorFeedTimeline, {
+                        "height": 400,
+                        "border": "#ffffff",
+                        "chrome": "noheader,nofooter,noborders,transparent",
+                        "tweetLimit": 10
+                    });
+                }
+                else {
+                    isupportjolla.errors.CreateError("twttr", isupportjolla.twitter.IsTwitterBlockedMessage, sailorFeedTimeline);
+                }
+            }
+        }
+        twitter.CreateSailorFeedTimeline = CreateSailorFeedTimeline;
+        function CreateSailfishExperienceTimeline() {
+            var sailfishExperienceTimeline = document.querySelector('div[data-isupportjolla-component="sailfish-experience-timeline"]');
+            if (sailfishExperienceTimeline !== null) {
+                if (!isupportjolla.twitter.IsTwitterBlocked) {
+                    twttr.widgets.createGridFromCollection('678194475089444864', sailfishExperienceTimeline, {
+                        "height": 400,
+                        "border": "#ffffff",
+                        "chrome": "noheader,nofooter,noborders,transparent",
+                        "tweetLimit": 10
+                    });
+                }
+                else {
+                    isupportjolla.errors.CreateError("twttr", isupportjolla.twitter.IsTwitterBlockedMessage, sailfishExperienceTimeline);
+                }
+            }
+        }
+        twitter.CreateSailfishExperienceTimeline = CreateSailfishExperienceTimeline;
         function GenerateForm() {
             isupportjolla.twitter.Form = document.querySelector('div[data-isupportjolla-component="tweet-form"]');
             isupportjolla.twitter.FormInput = document.createElement("textarea");
@@ -190,38 +242,21 @@ var isupportjolla;
         }
         twitter.GenerateForm = GenerateForm;
         function GenerateSailfishPhotoGrid() {
-            var sailfishExperienceTimeline = document.querySelector('div[data-isupportjolla-component="sailfish-experience-timeline"]');
-            if (sailfishExperienceTimeline !== null) {
-                if ((typeof twttr !== "undefined") && (typeof twttr.widgets !== "undefined")) {
-                    twttr.widgets.createGridFromCollection('678194475089444864', sailfishExperienceTimeline, {
-                        "height": 400,
-                        "border": "#ffffff",
-                        "chrome": "noheader,nofooter,noborders,transparent",
-                        "limit": 10
-                    });
-                }
-                else {
-                    var errorElement = isupportjolla.errors.CreateError("twttr", "Twitter widget being blocked by browser. Lemme guess, Ghostery?");
-                    sailfishExperienceTimeline.appendChild(errorElement);
-                }
+            var fullWidthElement = document.querySelector('div[data-isupportjolla-component="fullwidth-content"][data-isupportjolla-page="sailfish"]');
+            if (isupportjolla.GetPageWidth() > 600) {
+                isupportjolla.twitter.CreateSailfishExperienceTimeline();
+            }
+            else {
+                isupportjolla.twitter.ActivateLoadPrompt(fullWidthElement, isupportjolla.twitter.CreateSailfishExperienceTimeline);
             }
         }
         twitter.GenerateSailfishPhotoGrid = GenerateSailfishPhotoGrid;
         function GenerateTimeline() {
-            var sailorFeedTimeline = document.querySelector('div[data-isupportjolla-component="sailor-feed-timeline"]');
-            if (sailorFeedTimeline !== null) {
-                if ((typeof twttr !== "undefined") && (typeof twttr.widgets !== "undefined")) {
-                    twttr.widgets.createTimeline('675772340106608640', sailorFeedTimeline, {
-                        "height": 400,
-                        "border": "#ffffff",
-                        "chrome": "noheader,nofooter,noborders,transparent",
-                        "tweetLimit": 10
-                    });
-                }
-                else {
-                    var errorElement = isupportjolla.errors.CreateError("twttr", "Twitter widget being blocked by browser. Lemme guess, Ghostery?");
-                    sailorFeedTimeline.appendChild(errorElement);
-                }
+            if (isupportjolla.GetPageWidth() > 600) {
+                isupportjolla.twitter.CreateSailorFeedTimeline();
+            }
+            else {
+                isupportjolla.twitter.ActivateLoadPrompt(isupportjolla.Sidepane, isupportjolla.twitter.CreateSailorFeedTimeline);
             }
         }
         twitter.GenerateTimeline = GenerateTimeline;
@@ -249,4 +284,8 @@ var isupportjolla;
         }
     }
     isupportjolla.Init = Init;
+    function GetPageWidth() {
+        return document.body.getClientRects()[0].width;
+    }
+    isupportjolla.GetPageWidth = GetPageWidth;
 })(isupportjolla || (isupportjolla = {}));
