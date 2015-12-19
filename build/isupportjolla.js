@@ -93,7 +93,7 @@ var isupportjolla;
                     isupportjolla.PrimaryContent.appendChild(errorElement);
                 }
             };
-            isupportjolla.net.Request("http://isupportjolla.com/letters", "POST", { "Action": "get", "LetterId": "all" }, LettersUXResponseHandler);
+            isupportjolla.net.Request("http://isupportjolla.com/letters-api", "POST", { "Action": "get", "LetterId": "all" }, LettersUXResponseHandler);
         }
         letters.LoadLettersUX = LoadLettersUX;
         function CreateLetterListItem(letterMetadata) {
@@ -141,7 +141,7 @@ var isupportjolla;
                     isupportjolla.PrimaryContent.appendChild(errorDiv);
                 }
             }.bind(this, letterMetadata);
-            isupportjolla.net.Request("http://isupportjolla.com/letters", "POST", { "Action": "get", "LetterId": id }, LetterAPIRequestHandler);
+            isupportjolla.net.Request("http://isupportjolla.com/letters-api", "POST", { "Action": "get", "LetterId": id }, LetterAPIRequestHandler);
         }
         letters.LoadLetter = LoadLetter;
         function HideLetter() {

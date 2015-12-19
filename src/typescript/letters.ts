@@ -62,7 +62,7 @@ module isupportjolla.letters {
 
         // #endregion
 
-        isupportjolla.net.Request("http://isupportjolla.com/letters", "POST", { "Action" : "get", "LetterId" : "all" }, LettersUXResponseHandler); // Send the request to get all metadata Objects
+        isupportjolla.net.Request("http://isupportjolla.com/letters-api", "POST", { "Action" : "get", "LetterId" : "all" }, LettersUXResponseHandler); // Send the request to get all metadata Objects
     }
 
     // Create Letter List Item
@@ -132,7 +132,7 @@ module isupportjolla.letters {
 
         // #endregion
 
-        isupportjolla.net.Request("http://isupportjolla.com/letters", "POST", { "Action" : "get", "LetterId" : id}, LetterAPIRequestHandler); // Request the letter
+        isupportjolla.net.Request("http://isupportjolla.com/letters-api", "POST", { "Action" : "get", "LetterId" : id}, LetterAPIRequestHandler); // Request the letter
     }
 
     // HideLetter
