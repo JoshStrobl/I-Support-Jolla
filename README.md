@@ -40,5 +40,7 @@ Work on TypeScript is done at `src/typescript`. After making changes, run `build
 
 1. Automate (likely in CodeUtils) LibreJS license info adding.
 2. Favicon maybe? Designers welcome.
-3. Ability to submit letters of support. Also a UX for browsing those letters. Possible way of signing in and upvoting letters for automatic inclusion?
+3. Ability to submit letters of support via site and not just email.
 4. Multi-language, translation support and backend.
+5. Community section will resources such as blogs, developer documentation, etc.
+6. New landing page at some point.
