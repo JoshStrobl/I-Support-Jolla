@@ -78,7 +78,8 @@ module isupportjolla.twitter {
                     "height" : 400,
                     "border" : "#ffffff",
                     "chrome" : "noheader,nofooter,noborders,transparent",
-                    "tweetLimit" : 10
+                    "tweetLimit" : 5,
+                    "limit" : 5
                 });
             } else { // If Twitter is blocked
                 isupportjolla.errors.CreateError("twttr", isupportjolla.twitter.IsTwitterBlockedMessage, sailfishExperienceTimeline); // Create a Twitter error message and append to sailfishExperienceTimeline

@@ -218,7 +218,8 @@ var isupportjolla;
                         "height": 400,
                         "border": "#ffffff",
                         "chrome": "noheader,nofooter,noborders,transparent",
-                        "tweetLimit": 10
+                        "tweetLimit": 5,
+                        "limit": 5
                     });
                 }
                 else {
