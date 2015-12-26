@@ -10,7 +10,7 @@ Open source is integral to Sailors around the world. Jolla prides itself on bein
 
 I Support Jolla is built using [LESS](http://lesscss.org) and [TypeScript](http://typescriptlang.org), as well as leverage [CodeUtils](https://github.com/StroblIndustries/CodeUtils). You can set up LESS and TypeScript via NPM and CodeUtils via the instructions on its repo.
 
-You contribute, you will first need to set up CodeUtils on your local system and symlinking the `compiler` utility to `build/compiler` (*in this project*).
+To contribute, you will first need to set up CodeUtils on your local system and symlinking the `compiler` utility to `build/compiler` (*in this project*).
 
 ### Building ###
 
