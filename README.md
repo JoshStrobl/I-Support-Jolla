@@ -10,6 +10,8 @@ Open source is integral to Sailors around the world. Jolla prides itself on bein
 
 This project leverages CodeUtils for development and adopts the CodeUtils Usage Spec. To learn how to contribute to this project and set up CodeUtils, read [here](https://github.com/StroblIndustries/CodeUtils/blob/master/CodeUtils-Usage-Spec.md).
 
+You can also assist with translating by pinging [@JoshStrobl](https://twitter.com/JoshStrobl) on Twitter for access to our [Transifex](https://www.transifex.com/i-support-jolla/website-51/) translations!
+
 ## TODO ##
 
 1. Favicon maybe? Designers welcome.
