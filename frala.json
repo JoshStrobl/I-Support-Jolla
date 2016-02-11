@@ -1,6 +1,65 @@
 {
     "DefaultLanguage" : "en",
     "Terms" : {
-        
+        "Back" : {
+            "en" : "Back"
+        },
+        "Home" : {
+            "en" : "Home"
+        },
+        "Letters" : {
+            "en" : "Letters"
+        },
+        "Sailfish Experience" : {
+            "en" : "Sailfish Experience"
+        },
+        "Sailor Feed" : {
+            "en" : "Sailor Feed"
+        },
+        "Support" : {
+            "en" : "Support"
+        },
+        "Telegram Group" : {
+            "en" : "Telegram Group"
+        },
+        "Thank you" : {
+            "en" : "Thank You"
+        },
+        "ambiences_message" : {
+            "en" : "Sailfish OS enables you to personalize the experience of the entire OS through a feature called Ambiences."
+        },
+        "boat_fixing" : {
+            "en" : "Sometimes a boat needs fixing."
+        },
+        "full_list" : {
+            "en" : "Full list here."
+        },
+        "javascript_functionality" : {
+            "en" : "JavaScript is used for the Twitter API and our own site functionality."
+        },
+        "letters_from_community" : {
+            "en" : "These are letters sent in by the community supporting Jolla!"
+        },
+        "load_widget" : {
+            "en" : "Load Twitter Widget"
+        },
+        "list_positivity" : {
+            "en" : "List is manually updated. Only positivity allowed."
+        },
+        "noscript_detected" : {
+            "en" : "I see you're using noscript or have JS disabled. Mind enabling JS for this site?"
+        },
+        "screenshots_sailfishosexperience" : {
+            "en" : "Below are some screenshots taken by users, showing off their Sailfish OS Ambiences and experience! Get yours added by using #SailfishOSExperience on Twitter."
+        },
+        "show_support" : {
+            "en" : "Show your support for Jolla and your fellow Sailors."
+        },
+        "submit_publication" : {
+            "en" : "You can submit your own letters for publication to"
+        },
+        "tweet_support" : {
+            "en" : "Tweet with #ISupportJolla to show your support!"
+        }
     }
 }
