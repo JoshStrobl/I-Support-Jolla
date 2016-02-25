@@ -10,22 +10,22 @@
 		<meta name="twitter:description" content="Letters of support from the community to Jolla." />
 		<!-- End of Twitter Card -->
 		<!-- More meta info, CSS, JS -->
-		{ type="fragment" src="fragments/shared-metadata.html" }
+		{{ type="fragment" src="fragments/shared-metadata.html" }}
 	</head>
 	<body>
-		{ type="fragment" src="fragments/header.html"}
+		{{ type="fragment" src="fragments/header.html"}
 		<!-- Page Content -->
 		<div data-isupportjolla-component="page">
-			{ type="fragment" src="fragments/site-notice.html"}
+			{{ type="fragment" src="fragments/site-notice.html"}
 			<!-- Primary Content Area -->
 			<div data-isupportjolla-component="primary-content">
 				<!-- Letters List -->
 				<div data-isupportjolla-component="letters-list">
-					<h1>{ type="term" src="Letters" }</h1>
-                    <h2>{ type="term" src="letters_from_community" }</h2>
+					<h1>{{ type="term" src="Letters" }}</h1>
+                    <h2>{{ type="term" src="letters_from_community" }}</h2>
                     <!-- Maintain empty Letter Container Shell -->
                     <div data-isupportjolla-component="letter-container">
-                        <div data-isupportjolla-component="back-button">{ type="term" src="Back" }</div> <!-- Back Button -->
+                        <div data-isupportjolla-component="back-button">{{ type="term" src="Back" }}</div> <!-- Back Button -->
                         <!-- Published Letter Shell -->
                         <div data-isupportjolla-component="published-letter">
                             <div data-isupportjolla-component="published-letter-content"></div> <!-- Published Letter Content -->
@@ -34,12 +34,12 @@
                     </div>
                     <!-- End of empty Letter Container Shell -->
 				</div>
-				{ type="fragment" src="fragments/noscript.html" }
+				{{ type="fragment" src="fragments/noscript.html" }}
 			</div>
 			<!-- End of Primary Content Area -->
-			{ type="fragment" src="fragments/sidepane.html" }
+			{{ type="fragment" src="fragments/sidepane.html" }}
 		</div>
 		<!-- End of Page Content -->
-		{ type="fragment" src="fragments/footer.html" }
+		{{ type="fragment" src="fragments/footer.html" }}
 	</body>
 </html>
