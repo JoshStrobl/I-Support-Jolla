@@ -2,122 +2,82 @@
 
 // #region I Support Jolla Header
 
-body > header {
-    .fullWidth;
-    height: auto;
-    min-height: 300px;
-    color: white;
-    background-color: @primary;
-    overflow: hidden;
+body {
+    & > header {
+        .fullWidth;
+        height: auto;
+        min-height: 300px;
+        color: white;
+        background-color: @primary;
+        overflow: hidden;
 
-    & > div[data-isupportjolla-component="header-content"]{
-        height: e("calc(300px - 5%)"); // Set height to 300px minus 5% margins
+        & > div[data-isupportjolla-component="header-content"]{
+            height: e("calc(300px - 5%)"); // Set height to 300px minus 5% margins
 
-        // #region Scaling
+            // #region Scaling
 
-        @media screen and (max-width: 451px){
-            .fullWidth;
-        }
-
-        @media screen and (min-width: 452px){
-            .float;
-            width: 450px;
-            .horizontalAlign(450px); // Horizontal align Header Content
-        }
-
-        // #endregion
-
-        // #region Header Logo
-
-        & > div[data-isupportjolla-component="header-logo"]{
-            .float;
-            height: 80px;
-            width: 250px;
-            font-size: 3rem; // 3x root font size
-            line-height: 80px;
-
-            .horizontalAlign(250px); // Horizontal align Header Logo Element
-            margin-top: 2.5%;
-            margin-bottom: 2.5%;
-
-            & > img {
-                float: right; // Always float to right in section
-                max-height: 80px;
-            }
-        }
-
-        // #endregion
-
-        // #region Header Description
-
-        & > div[data-isupportjolla-component="header-description"]{
-            .fullWidth;
-            min-height: 64px;
-            font-size: 1.25rem; // 1.25x root font size
-            text-align: center;
-            line-height: 1.5;
-            margin-bottom: 2.5%;
-
-            & > label {
+            @media screen and (max-width: 451px){
                 .fullWidth;
-                font-size: 2rem; // 2x root font size
             }
-        }
 
-        // #endregion
-
-        // #region Header Tweet
-
-        & > div[data-isupportjolla-component="header-tweet"]{
-            .fullWidth;
-            font-size: 1.25rem;
-            text-align: center;
-            margin-bottom: 2.5%;
-
-            // #region Tweet Form
-
-            & > div[data-isupportjolla-component="tweet-form"]{
+            @media screen and (min-width: 452px){
                 .float;
-                @tweetFormHeight: 68;
+                width: 450px;
+                .horizontalAlign(450px); // Horizontal align Header Content
+            }
 
-                height: unit(@tweetFormHeight, px);
-                width: 90%;
-                margin: 2.5% 5% 2.5% 5%; // 2.5% top / bottom, 5% left / right
+            // #endregion
 
-                // #region Tweet Noscript Handler
+            // #region Header Logo
 
-                & > noscript {
-                    .fullWidth;
-                }
+            & > div[data-isupportjolla-component="header-logo"]{
+                .float;
+                height: 80px;
+                width: 250px;
+                font-size: 3rem; // 3x root font size
+                line-height: 80px;
 
-                // #endregion
+                .horizontalAlign(250px); // Horizontal align Header Logo Element
+                margin-top: 2.5%;
+                margin-bottom: 2.5%;
 
-                & > textarea {
-                    .float;
-                    height: unit((@tweetFormHeight - 8), px);
-                    width: 70%;
-
-                    font-size: 1rem;
-                    text-align: left;
-                    resize: none;
-
-                    border: 0;
-                    border-radius: 5px;
-                    padding: 4px;
-
-                    &:active{
-                        border: 0;
-                    }
+                & > img {
+                    max-height: 80px;
                 }
             }
 
             // #endregion
+
+            // #region Header Description
+
+            & > div[data-isupportjolla-component="header-description"]{
+                .fullWidth;
+                min-height: 64px;
+                font-size: 1.25rem; // 1.25x root font size
+                text-align: center;
+                line-height: 1.5;
+                margin-bottom: 2.5%;
+
+                & > label {
+                    .fullWidth;
+                    font-size: 2rem; // 2x root font size
+                }
+            }
+
+            // #endregion
+
+            // #region Header Tweet Form Container
+
+            & > div[data-isupportjolla-component="header-tweet"]{
+                .fullWidth;
+                font-size: 1.25rem;
+                text-align: center;
+                margin-bottom: 2.5%;
+            }
         }
 
         // #endregion
     }
-
-    // #endregion
 }
 
 // #endregion

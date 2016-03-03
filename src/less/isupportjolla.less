@@ -69,22 +69,12 @@ body {
 
         // #endregion
 
-        // #region Primary Content Area
-
-        & > div[data-isupportjolla-component="primary-content"]{
-            .float;
-        }
-
-        // #endregion
-
         // #region Notice
 
         & > div[data-isupportjolla-component="notice"]{
             .notice(false); // Set notice to use mixin but not full width
             width: e("calc(100% - 10px)"); // Compensate for border-radius by reducing width
-            text-indent: -10px; // Negative text-indent to compensate for border-left
             background-color: #f5f5f5;
-            border-left: 10px solid @secondary;
             padding-top: 1.8rem;
             padding-bottom: 1.8rem;
         }

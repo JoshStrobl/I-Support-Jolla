@@ -1,0 +1,40 @@
+@import (reference) "core.less";
+
+// #region I Support Jolla Twitter Form
+
+body {
+    div[data-isupportjolla-component="tweet-form"]{
+        .float;
+        @tweetFormHeight: 68;
+
+        height: unit(@tweetFormHeight, px);
+        width: 90%;
+        margin: 2.5% 5% 2.5% 5%; // 2.5% top / bottom, 5% left / right
+
+        // #region Tweet Noscript Handler
+
+        & > noscript {
+            .fullWidth;
+        }
+
+        // #endregion
+
+        & > textarea {
+            .float;
+            height: unit((@tweetFormHeight - 8), px);
+            width: 70%;
+
+            font-size: 1rem;
+            text-align: left;
+            resize: none;
+
+            border: 0;
+            border-radius: 5px;
+            padding: 4px;
+
+            &:active{
+                border: 0;
+            }
+        }
+    }
+}

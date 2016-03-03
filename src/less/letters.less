@@ -1,37 +1,129 @@
 @import (reference) "core.less";
 
-// #region Letters List
+body {
+    // #region Letters List
 
-div[data-isupportjolla-component="letters-list"]{
-    .fullWidth;
-
-    // #region Letters List Items
-
-    & > div[data-isupportjolla-component="letters-list-items"]{
+    div[data-isupportjolla-component="letters-list"]{
         .fullWidth;
 
-        // #region Individual Items
+        // #region Letters List Items
 
-        & > div[data-isupportjolla-component="letters-list-item"]{
-            .float;
-            min-height: 100px;
-            width: e("calc(100% - 10px)"); // 100% minus 10px (will be made up with padding)
-            font-size: 1rem;
-            padding: 5px;
+        & > div[data-isupportjolla-component="letters-list-items"]{
+            .fullWidth;
 
-            &:nth-of-type(odd){ // For every odd row
-                background-color: #f5f5f5;
-            }
+            // #region Individual Items
 
-            &:nth-of-type(even){ // For every even row
-                border-top: 1px solid #cccccc;
-                border-bottom: 1px solid #cccccc;
-            }
-
-            & > p { // Letter exerpt
+            & > div[data-isupportjolla-component="letters-list-item"]{
                 .float;
-                width: 90%;
-                margin: 1.2rem 0 0 0;
+                min-height: 100px;
+                width: e("calc(100% - 10px)"); // 100% minus 10px (will be made up with padding)
+                font-size: 1rem;
+                padding: 5px;
+
+                &:nth-of-type(odd){ // For every odd row
+                    background-color: #f5f5f5;
+                }
+
+                &:nth-of-type(even){ // For every even row
+                    border-top: 1px solid #cccccc;
+                    border-bottom: 1px solid #cccccc;
+                }
+
+                & > p { // Letter exerpt
+                    .float;
+                    width: 90%;
+                    margin: 1.2rem 0 0 0;
+                }
+            }
+
+            // #endregion
+        }
+
+        // #endregion
+    }
+
+    // #endregion
+
+    // #region Letter Metadata
+
+    div[data-isupportjolla-component="letter-metadata"]{
+        .fullWidth;
+        min-height: 50px;
+
+        & > img, & > span, & > b, & > u { // All the things (without a perf killer * selector)
+            .float;
+        }
+
+        & > span, & > b, & > u { // Textual information
+            min-height: 25px;
+            line-height: 25px;
+        }
+
+        & > img { // Avatar
+            height: 50px;
+            width: 50px;
+            margin-right: 10px;
+        }
+
+        & > span { // Link to letter
+            color: @link; // Set to same as link
+            width: e("calc(100% - 60px)"); // 100% width minus avatar width and 10px spacing
+            font-size: 1.4rem;
+            cursor: pointer;
+            border-bottom: 0;
+        }
+
+        & > b { // Author name
+            font-weight: normal; // No bold, I said no! Off with ye!
+            margin-right: 10px;
+        }
+
+        & > u { // Date
+            color: #666666;
+            text-decoration: none; // Get these mother f-ing underlines off this mother f-ing u tag!
+        }
+    }
+
+    // #endregion
+
+    // #region Styling for primary letter
+
+    div[data-isupportjolla-component="letter"]{
+        .fullWidth;
+
+        // #region Author Info
+
+        & > div[data-isupportjolla-component="letter-author"]{
+            .fullWidth;
+            height: 50px;
+            color: @primary;
+            font-size: 1.5rem;
+            text-indent: 1.5%;
+            line-height: 50px;
+
+            & > img { // Author image
+                height: 50px;
+                width: 50px;
+                border-radius: 50px; // Ensure img is circular
+            }
+        }
+
+        // #endregion
+
+        // #region Letter Content
+
+        & > div[data-isupportjolla-component="letter-content"]{
+            .fullWidth;
+            font-size: 1rem;
+
+            h2 {
+                margin-bottom: 2.5%; // Override default h2 margin
+            }
+
+            & > p { // A paragraph, obviously
+                .fullWidth;
+                line-height: 2rem;
+                margin: 1.5% 0 1.5% 0; // 1.5% margin on top and bottom
             }
         }
 
@@ -39,125 +131,36 @@ div[data-isupportjolla-component="letters-list"]{
     }
 
     // #endregion
-}
 
-// #endregion
+    // #region Styling for published letters
 
-// #region Letter Metadata
-
-div[data-isupportjolla-component="letter-metadata"]{
-    .fullWidth;
-    min-height: 50px;
-
-    & > img, & > span, & > b, & > u { // All the things (without a perf killer * selector)
-        .float;
-    }
-
-    & > span, & > b, & > u { // Textual information
-        min-height: 25px;
-        line-height: 25px;
-    }
-
-    & > img { // Avatar
-        height: 50px;
-        width: 50px;
-        margin-right: 10px;
-    }
-
-    & > span { // Link to letter
-        color: @link; // Set to same as link
-        width: e("calc(100% - 60px)"); // 100% width minus avatar width and 10px spacing
-        font-size: 1.4rem;
-        cursor: pointer;
-        border-bottom: 0;
-    }
-
-    & > b { // Author name
-        font-weight: normal; // No bold, I said no! Off with ye!
-        margin-right: 10px;
-    }
-
-    & > u { // Date
-        color: #666666;
-        text-decoration: none; // Get these mother f-ing underlines off this mother f-ing u tag!
-    }
-}
-
-// #endregion
-
-// #region Styling for primary letter
-
-div[data-isupportjolla-component="letter"]{
-    .fullWidth;
-
-    // #region Author Info
-
-    & > div[data-isupportjolla-component="letter-author"]{
+    div[data-isupportjolla-component="letter-container"]{
         .fullWidth;
-        height: 50px;
-        color: @primary;
-        font-size: 1.5rem;
-        text-indent: 1.5%;
-        line-height: 50px;
+        display: none; // Default to no displaying
 
-        & > img { // Author image
+        & > div[data-isupportjolla-component="back-button"]{ // Back button, of course
             .float;
-            height: 50px;
-            width: 50px;
-            border-radius: 50px; // Ensure img is circular
+            height: 3rem;
+            width: 5rem;
+            color: white;
+            font-size: 1.2rem;
+            line-height: 3rem;
+            text-align: center;
+            text-decoration: none;
+            background-color: @secondary;
+            margin-right: e("calc(100% - 5rem)");
+            margin-bottom: 1.5%;
+        }
+
+        & > div[data-isupportjolla-component="published-letter"]{
+            .fullWidth;
+
+            & > div[data-isupportjolla-component="published-letter-content"]{
+                .fullWidth;
+                margin-top: 2.5%;
+            }
         }
     }
 
     // #endregion
-
-    // #region Letter Content
-
-    & > div[data-isupportjolla-component="letter-content"]{
-        .fullWidth;
-        font-size: 1rem;
-
-        h2 {
-            margin-bottom: 2.5%; // Override default h2 margin
-        }
-
-        & > p { // A paragraph, obviously
-            .fullWidth;
-            line-height: 2rem;
-            margin: 1.5% 0 1.5% 0; // 1.5% margin on top and bottom
-        }
-    }
-
-    // #endregion
-}
-
-// #endregion
-
-// #region Styling for published letters
-
-div[data-isupportjolla-component="letter-container"]{
-    .fullWidth;
-    display: none; // Default to no displaying
-
-    & > div[data-isupportjolla-component="back-button"]{ // Back button, of course
-        .float;
-        height: 3rem;
-        width: 5rem;
-        color: white;
-        font-size: 1.2rem;
-        line-height: 3rem;
-        text-align: center;
-        text-decoration: none;
-        background-color: @secondary;
-        margin-right: e("calc(100% - 5rem)");
-        margin-bottom: 1.5%;
-    }
-
-    & > div[data-isupportjolla-component="published-letter"]{
-        .fullWidth;
-
-        & > div[data-isupportjolla-component="published-letter-content"]{
-            .fullWidth;
-            margin-top: 2.5%;
-        }
-    }
 }
