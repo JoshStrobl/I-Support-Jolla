@@ -2,7 +2,7 @@
 @import (reference) "core.less";
 
 div[data-isupportjolla-component="navigation"]{
-    .fullWidth;
+    .float;
     min-height: 4rem;
     background-color: lighten(@primary, 1.5%);
     border-top: 2px solid @darkBlue;
@@ -10,15 +10,15 @@ div[data-isupportjolla-component="navigation"]{
     // #region Scaling
 
     @media screen and (max-width: 400px){
-        & > a:first-of-type {
-            margin-left: 1.5%;
-        }
+        width: 97%;
+        padding-left: 1.5%;
+        padding-right: 1.5%;
     }
 
     @media screen and (min-width: 401px) and (max-width : 1279px){ // Horizontal mobile to "almost" HD
-        & > a:first-of-type {
-            margin-left: 2.5%;
-        }
+        width: 95%;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
     }
 
     @media screen and (max-width: 1279px){ // Anything below HD
@@ -34,27 +34,26 @@ div[data-isupportjolla-component="navigation"]{
     }
 
     @media screen and (min-width: 1280px) and (max-width: 1900px){ // HD to almost FHD
-        & > a:first-of-type { // First link in navigation
-            margin-left: 5%;
-        }
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     @media screen and (min-width: 1901px) and (max-width: 2549px){ // Basically FHD+ (yes, I know FHD is 1920px in width, shut up)
-        & > a:first-of-type { // First link in navigation
-            margin-left: 15%;
-        }
+        width: 70%;
+        padding-left: 15%;
+        padding-right: 15%;
     }
 
     @media screen and (min-width: 2550px){ // Okay now you're just showing off. Stahp.
-        & > a:first-of-type { // First link in navigation
-            margin-left: 25%;
-        }
+        width: 50%;
+        padding-left: 25%;
+        padding-right: 25%;
     }
 
     // #endregion
 
     & > a {
-        .float;
         color: white;
         font-size: 1.16rem;
         line-height: 4rem;
