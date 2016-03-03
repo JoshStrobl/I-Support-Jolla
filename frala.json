@@ -69,11 +69,9 @@
 			"ar": "شكراً",
 			"cs": "Děkujeme",
 			"es": "Gracias",
+			"en": "Thank You",
 			"it": "Grazie",
 			"ru": "Спасибо"
-		},
-		"Thank you": {
-			"en": "Thank You"
 		},
 		"ambiences_message": {
 			"ar": "نظام تشغيل سيلفش يمنحك تجربة فريدة بتخصيص كامل النظام عن طريق خاصية أمبيينسيس. ",
