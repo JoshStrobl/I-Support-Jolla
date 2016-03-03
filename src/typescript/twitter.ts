@@ -1,5 +1,6 @@
 // This is the Twitter module of isupportjolla
 /// <reference path="interfaces.ts" />
+/// <reference path="lang.ts" />
 
 module isupportjolla.twitter {
 
@@ -59,6 +60,7 @@ module isupportjolla.twitter {
                     "height" : 400,
                     "border" : "#ffffff",
                     "chrome" : "noheader,nofooter,noborders,transparent",
+                    "lang" : isupportjolla.GetLanguage(),
                     "tweetLimit" : 10
                 });
             } else { // If Twitter is blocked
@@ -78,6 +80,7 @@ module isupportjolla.twitter {
                     "height" : 400,
                     "border" : "#ffffff",
                     "chrome" : "noheader,nofooter,noborders,transparent",
+                    "lang" : isupportjolla.GetLanguage(),
                     "tweetLimit" : 5,
                     "limit" : 5
                 });

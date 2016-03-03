@@ -17,6 +17,17 @@ var isupportjolla;
 var twttr;
 var isupportjolla;
 (function (isupportjolla) {
+    function GetDirection() {
+        return document.body.getAttribute("dir");
+    }
+    isupportjolla.GetDirection = GetDirection;
+    function GetLanguage() {
+        return document.querySelector("html").getAttribute("lang");
+    }
+    isupportjolla.GetLanguage = GetLanguage;
+})(isupportjolla || (isupportjolla = {}));
+var isupportjolla;
+(function (isupportjolla) {
     var net;
     (function (net) {
         function RequestHandler() {
@@ -201,6 +212,7 @@ var isupportjolla;
                         "height": 400,
                         "border": "#ffffff",
                         "chrome": "noheader,nofooter,noborders,transparent",
+                        "lang": isupportjolla.GetLanguage(),
                         "tweetLimit": 10
                     });
                 }
@@ -218,6 +230,7 @@ var isupportjolla;
                         "height": 400,
                         "border": "#ffffff",
                         "chrome": "noheader,nofooter,noborders,transparent",
+                        "lang": isupportjolla.GetLanguage(),
                         "tweetLimit": 5,
                         "limit": 5
                     });

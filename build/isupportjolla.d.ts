@@ -12,6 +12,10 @@ interface LetterMetadata extends Object {
     Author: LetterAuthor;
     Description: string;
 }
+declare module isupportjolla {
+    function GetDirection(): string;
+    function GetLanguage(): string;
+}
 declare module isupportjolla.net {
     function RequestHandler(): void;
     function Request(url: string, method: string, data: any, func?: Function): void;

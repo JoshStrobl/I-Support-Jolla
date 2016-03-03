@@ -1,6 +1,7 @@
 // I Support Jolla - Typescript
 /// <reference path="errors.ts" />
 /// <reference path="interfaces.ts" />
+/// <reference path="lang.ts" />
 /// <reference path="letters.ts" />
 /// <reference path="net.ts" />
 /// <reference path="twitter.ts" />
