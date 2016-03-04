@@ -22,7 +22,7 @@ module isupportjolla.lang {
             var languagesArray = isupportjolla.Config.Languages.split(","); // Split the comma-separated languages up
 
             var pageURL : string = document.location.href; // Set pageURL to the entire location href of the document
-            var rootURL : string = pageURL.substr(0, pageURL.lastIndexOf("/") - 2); // Set the root URL to the current href, being a substring of the last index of /, minus 2 (lang code)
+            var rootURL : string = pageURL.substr(0, pageURL.lastIndexOf(isupportjolla.lang.GetLanguage())); // Set the root URL to the current href, being a substring of the last index of the language in use
             var htmlFile : string = document.location.href.substr(pageURL.lastIndexOf("/")); // Set the htmlFile to the last index of / + 1 (so we only get the page, INCLUDING the end /)
 
             for (var language of languagesArray) { // For each language in languagesArray

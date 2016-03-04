@@ -32,7 +32,7 @@ var isupportjolla;
                 var languageBar = document.querySelector('header > div[data-isupportjolla-component="navigation"][data-isupportjolla-type="language"]');
                 var languagesArray = isupportjolla.Config.Languages.split(",");
                 var pageURL = document.location.href;
-                var rootURL = pageURL.substr(0, pageURL.lastIndexOf("/") - 2);
+                var rootURL = pageURL.substr(0, pageURL.lastIndexOf(isupportjolla.lang.GetLanguage()));
                 var htmlFile = document.location.href.substr(pageURL.lastIndexOf("/"));
                 for (var _i = 0; _i < languagesArray.length; _i++) {
                     var language = languagesArray[_i];
