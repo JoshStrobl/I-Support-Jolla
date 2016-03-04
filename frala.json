@@ -1,5 +1,6 @@
 {
 	"DefaultLanguage": "en",
+	"Direction": "ltr",
 	"Languages": [
 		"ar",
 		"cs",
@@ -68,8 +69,8 @@
 		"Thank You": {
 			"ar": "شكراً",
 			"cs": "Děkujeme",
-			"es": "Gracias",
 			"en": "Thank You",
+			"es": "Gracias",
 			"it": "Grazie",
 			"ru": "Спасибо"
 		},
@@ -138,7 +139,8 @@
 			"ru": "Видимо, Вы используете noscript или отключили JavaScript. Не могли бы Вы включить JS для этого сайта?"
 		},
 		"positive_input_text": {
-			"en" : "Input positive tweet with #ISupportJolla"
+			"cs": "Napište svůj pozitivní tweet s hashtagem #ISupportJolla",
+			"en": "Input positive tweet with #ISupportJolla"
 		},
 		"screenshots_sailfishosexperience": {
 			"ar": "التالي عبارة عن لقطات مقدمة من مستخدمين يتفاخرون بلأمبيينسيس و تجربتهم! أضف لقطاتك بإستخدام  SailfishOSExperience# على تويتر.",
