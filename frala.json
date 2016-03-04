@@ -7,7 +7,8 @@
 		"en",
 		"es",
 		"it",
-		"ru"
+		"ru",
+		"sl"
 	],
 	"Terms": {
 		"Back": {
@@ -16,7 +17,8 @@
 			"en": "Back",
 			"es": "Volver",
 			"it": "Indietro",
-			"ru": "Назад"
+			"ru": "Назад",
+			"sl": "Nazaj"
 		},
 		"Home": {
 			"ar": "الصفحة الرئيسية",
@@ -24,7 +26,8 @@
 			"en": "Home",
 			"es": "Inicio",
 			"it": "Home",
-			"ru": "Главная"
+			"ru": "Главная",
+			"sl": "Domov"
 		},
 		"Letters": {
 			"ar": "الرسائل",
@@ -32,7 +35,8 @@
 			"en": "Letters",
 			"es": "Cartas",
 			"it": "Lettere",
-			"ru": "Письма"
+			"ru": "Письма",
+			"sl": "Pisma"
 		},
 		"Sailfish Experience": {
 			"ar": "Sailfish تجربة",
@@ -40,7 +44,8 @@
 			"en": "Sailfish Experience",
 			"es": "Experiencia con Sailfish",
 			"it": "L'esperienza di Sailfish",
-			"ru": "Впечатления от Sailfish"
+			"ru": "Впечатления от Sailfish",
+			"sl": "Sailfish Izkušnja"
 		},
 		"Sailor Feed": {
 			"ar": "شريط البحارة",
@@ -48,7 +53,8 @@
 			"en": "Sailor Feed",
 			"es": "Valoración de los marineros",
 			"it": "Feed dei Marinai",
-			"ru": "Новости от Моряков"
+			"ru": "Новости от Моряков",
+			"sl": "Vir Mornarjev"
 		},
 		"Support": {
 			"ar": "الدعم",
@@ -56,7 +62,8 @@
 			"en": "Support",
 			"es": "Apoyo a",
 			"it": "Supporta",
-			"ru": "Поддержка"
+			"ru": "Поддержка",
+			"sl": "Podpora"
 		},
 		"Telegram Group": {
 			"ar": "مجموعة تليغرام",
@@ -64,7 +71,8 @@
 			"en": "Telegram Group",
 			"es": "Grupo de Telegram",
 			"it": "Gruppo Telegram",
-			"ru": "Группа в Telegram'е"
+			"ru": "Группа в Telegram'е",
+			"sl": "Telegram Skupina"
 		},
 		"Thank You": {
 			"ar": "شكراً",
@@ -72,7 +80,8 @@
 			"en": "Thank You",
 			"es": "Gracias",
 			"it": "Grazie",
-			"ru": "Спасибо"
+			"ru": "Спасибо",
+			"sl": "Najlepša hvala"
 		},
 		"ambiences_message": {
 			"ar": "نظام تشغيل سيلفش يمنحك تجربة فريدة بتخصيص كامل النظام عن طريق خاصية أمبيينسيس. ",
@@ -80,7 +89,8 @@
 			"en": "Sailfish OS enables you to personalize the experience of the entire OS through a feature called Ambiences.",
 			"es": "Sailfish OS te permite personalizar la experiencia de todo el sistema operativo a través de una funcionalidad llamada Ambiente. ",
 			"it": "Sailfish OS ti permette di personalizzare l'esperienza dell'intero sistema operativo attraverso una funzionalità chiamata Atmosfere.",
-			"ru": "С Sailfish OS вы можете персонализировать внешний вид всей системы с помощью функциональности Атмосферы"
+			"ru": "С Sailfish OS вы можете персонализировать внешний вид всей системы с помощью функциональности Атмосферы",
+			"sl": "Sailfish OS vam omogoča, da prilagodite izkušnjo celotnega operacijska sistema skozi funkcijo imenovano Ambiences - Vzdušja."
 		},
 		"boat_fixing": {
 			"ar": "أحياناً, القارب سيحتاج إلى التصليح.",
@@ -88,7 +98,8 @@
 			"en": "Sometimes a boat needs fixing.",
 			"es": "A veces un barco necesita repararse",
 			"it": "A volte una barca ha bisogno di riparazioni.",
-			"ru": "Иногда «лодку» приходится чинить"
+			"ru": "Иногда «лодку» приходится чинить",
+			"sl": "Včasih je čoln potreben popravila."
 		},
 		"full_list": {
 			"ar": "القائمة الكاملة هنا.",
@@ -96,7 +107,8 @@
 			"en": "Full list here.",
 			"es": "Lista completa aquí.",
 			"it": "Qui la lista completa.",
-			"ru": "Здесь можно найти полный список"
+			"ru": "Здесь можно найти полный список",
+			"sl": "Celoten seznam tu."
 		},
 		"javascript_functionality": {
 			"ar": "الجافاسكربت -JavaScript- يستخدم لـTwitter API و لوظائف موقعنا الخاصة.",
@@ -104,7 +116,8 @@
 			"en": "JavaScript is used for the Twitter API and our own site functionality.",
 			"es": "JavaScript se utiliza para la API de Twitter y el funcionamiento de nuestro propio sitio.",
 			"it": "JavaScript viene usato per l'API di Twitter e per funzionalità del nostro stesso sito.",
-			"ru": "JavaScript используется для API Твиттера и функционирования нашего сайта"
+			"ru": "JavaScript используется для API Твиттера и функционирования нашего сайта",
+			"sl": "JavaScript je uporabljen za Twitter-jev programski vmesnik in delovanje naše spletne strani."
 		},
 		"letters_from_community": {
 			"ar": "هذه الرسائل مرسلة من قبل المجتمع الداعم لـ !Jolla ",
@@ -112,7 +125,8 @@
 			"en": "These are letters sent in by the community supporting Jolla!",
 			"es": "¡Estas son las cartas enviadas por la comunidad para apoyar a Jolla!",
 			"it": "Queste sono lettere inviate dalla comunità a supporto di Jolla!",
-			"ru": "Письма из сообщества поддержки Jolla"
+			"ru": "Письма из сообщества поддержки Jolla",
+			"sl": "Ta pisma smo prejeli od skupnosti, ki podpira podjetje Jolla!"
 		},
 		"list_positivity": {
 			"ar": "يتم تحديث القائمة يدوياً. الرسائل الإيجابية فقط مسموحة.",
@@ -120,7 +134,8 @@
 			"en": "List is manually updated. Only positivity allowed.",
 			"es": "La lista se actualiza manualmente. Sólo se admite lo positivo.",
 			"it": "La lista viene aggiornata manualmente. Consentita solo positività.",
-			"ru": "Список обновляется вручную. Будьте позитивны."
+			"ru": "Список обновляется вручную. Будьте позитивны.",
+			"sl": "Seznam je ročno posodobljen. Dovoljena je je samo pozitivnost."
 		},
 		"load_widget": {
 			"ar": "حمل التطبيق المصغر لتويتر",
@@ -128,7 +143,8 @@
 			"en": "Load Twitter Widget",
 			"es": "Carga el widget de Twitter",
 			"it": "Carica il widget di Twitter",
-			"ru": "Загрузить виджет Твиттера"
+			"ru": "Загрузить виджет Твиттера",
+			"sl": "Naloži Twitter Gradnik"
 		},
 		"noscript_detected": {
 			"ar": "لاحظت أنك تستخدم noscript أو  أنك لم تمكن الجافاسكربت-JS. هل من الممكن تمكين الجافاسكربت-JS-على هذا الموقع؟",
@@ -136,13 +152,15 @@
 			"en": "I see you're using noscript or have JS disabled. Mind enabling JS for this site?",
 			"es": "Veo que estás usando noscript o tienes JS deshabilitado. ¿Te importaría activar JS para este sitio?",
 			"it": "Vedo che stai usando noscript o che hai disabilitato i JS. Ti spiacerebbe attivare i JS per questo sito?",
-			"ru": "Видимо, Вы используете noscript или отключили JavaScript. Не могли бы Вы включить JS для этого сайта?"
+			"ru": "Видимо, Вы используете noscript или отключили JavaScript. Не могли бы Вы включить JS для этого сайта?",
+			"sl": "Vidimo, da uporabljate noscript ali pa imate JavaScript onemogočen. Bi lahko, prosim omogočili JavaScript za to stran?"
 		},
 		"positive_input_text": {
 			"ar": "ضع تغرية إيجابية بإستخدام ISupportJolla#",
 			"cs": "Napište svůj pozitivní tweet s hashtagem #ISupportJolla",
 			"en": "Input positive tweet with #ISupportJolla",
-			"es": "Escribe un tuit positivo con #ISupportJolla"
+			"es": "Escribe un tuit positivo con #ISupportJolla",
+			"sl": "Vnesite pozitiven Tvit z #ISupportJolla"
 		},
 		"screenshots_sailfishosexperience": {
 			"ar": "التالي عبارة عن لقطات مقدمة من مستخدمين يتفاخرون بلأمبيينسيس و تجربتهم! أضف لقطاتك بإستخدام  SailfishOSExperience# على تويتر.",
@@ -150,7 +168,8 @@
 			"en": "Below are some screenshots taken by users, showing off their Sailfish OS Ambiences and experience! Get yours added by using #SailfishOSExperience on Twitter.",
 			"es": "Estas son algunas de las capturas de pantalla que los usuarios han hecho para mostrar sus Ambientes y su experiencia con Sailfish OS! Añade las tuyas usando #SailfishOSExperience en Twitter.",
 			"it": "Qui di seguito alcune schermate catturate dagli utenti, per mettere in mostra le loro Atmosfere e la loro esperienza con Sailfish OS! Fai aggiungere anche le tue usando #SailfishOSExperience su Twitter.",
-			"ru": "Ниже представлены скриншоты, сделанные пользователями Sailfish OS, демонстрирующие их Атмосферы и опыт работы с системой. Добавляйте свои с хэштегом #SailfishOSExperience в Твиттере"
+			"ru": "Ниже представлены скриншоты, сделанные пользователями Sailfish OS, демонстрирующие их Атмосферы и опыт работы с системой. Добавляйте свои с хэштегом #SailfishOSExperience в Твиттере",
+			"sl": "Spodaj je nekaj zaslonskih slik od uporabnikov, ki razkazujejo njihova Sailfish OS Vzdušja in izkušnje! Dodajte še svoje na Twitter-ju z uporabo #SailfishOSExperience."
 		},
 		"show_support": {
 			"ar": "أظهر دعمك لـ Jolla و لزملائك البحارة.",
@@ -158,7 +177,8 @@
 			"en": "Show your support for Jolla and your fellow Sailors.",
 			"es": "Muestra tu apoyo a Jolla y a tus compañeros marineros.",
 			"it": "Mostra il tuo supporto per Jolla e i tuoi compagni Marinai.",
-			"ru": "Выразите свою поддержку Jolla и дружественным Морякам"
+			"ru": "Выразите свою поддержку Jolla и дружественным Морякам",
+			"sl": "Pokažite svojo podporo za podjetje Jolla in druge Mornarje."
 		},
 		"submit_publication": {
 			"ar": "يمكنك ارسال رسائلك لننشرها على ",
@@ -166,7 +186,8 @@
 			"en": "You can submit your own letters for publication to",
 			"es": "Puedes enviar tus propias cartas para su publicación a ",
 			"it": "Puoi inviare le tue lettere per la pubblicazione a",
-			"ru": "Сюда Вы можете отправить письма для публикации"
+			"ru": "Сюда Вы можете отправить письма для публикации",
+			"sl": "Tudi sami lahko pošljete pisma za objavo na"
 		},
 		"tweet_support": {
 			"ar": "غرد بإستخدام ISupportJolla# لإظهار دعمك!",
@@ -174,7 +195,8 @@
 			"en": "Tweet with #ISupportJolla to show your support!",
 			"es": "¡Tuitea con #ISupportJolla para mostrar tu apoyo!",
 			"it": "Twitta con #ISupportJolla per manifestare il tuo supporto!",
-			"ru": "Пишите твиты с хэштегом #IsupportJolla, что бы выразить свою поддержку!"
+			"ru": "Пишите твиты с хэштегом #IsupportJolla, что бы выразить свою поддержку!",
+			"sl": "Tvitajte z #ISupportJolla, da pokažete svojo podporo!"
 		}
 	}
 }
