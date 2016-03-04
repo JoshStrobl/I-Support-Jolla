@@ -83,3 +83,14 @@ body {
 
     // #endregion
 }
+
+// Some Arabic overrides
+
+html[lang="ar"] {
+    div[data-isupportjolla-component="navigation"]{ // Navigation
+        a[href="sailfish.html"]{ // Sailfish link
+            direction: ltr; // Force ltr
+            unicode-bidi: embed; // Required unicode bidirection attr to override and use embedded direction style
+        }
+    }
+}

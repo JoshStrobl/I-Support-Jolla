@@ -35,7 +35,7 @@
 			"ru": "Письма"
 		},
 		"Sailfish Experience": {
-			"ar": "تجربة سيلفش",
+			"ar": "Sailfish تجربة",
 			"cs": "Zážitky ze Sailfish OS",
 			"en": "Sailfish Experience",
 			"es": "Experiencia con Sailfish",
@@ -139,8 +139,10 @@
 			"ru": "Видимо, Вы используете noscript или отключили JavaScript. Не могли бы Вы включить JS для этого сайта?"
 		},
 		"positive_input_text": {
+			"ar": "ضع تغرية إيجابية بإستخدام ISupportJolla#",
 			"cs": "Napište svůj pozitivní tweet s hashtagem #ISupportJolla",
-			"en": "Input positive tweet with #ISupportJolla"
+			"en": "Input positive tweet with #ISupportJolla",
+			"es": "Escribe un tuit positivo con #ISupportJolla"
 		},
 		"screenshots_sailfishosexperience": {
 			"ar": "التالي عبارة عن لقطات مقدمة من مستخدمين يتفاخرون بلأمبيينسيس و تجربتهم! أضف لقطاتك بإستخدام  SailfishOSExperience# على تويتر.",
