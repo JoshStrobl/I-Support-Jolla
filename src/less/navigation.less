@@ -3,9 +3,7 @@
 
 div[data-isupportjolla-component="navigation"]{
     .float;
-    min-height: 4rem;
     background-color: lighten(@primary, 1.5%);
-    border-top: 2px solid @darkBlue;
 
     // #region Scaling
 
@@ -53,14 +51,11 @@ div[data-isupportjolla-component="navigation"]{
 
     // #endregion
 
+    // #region Link
+
     & > a {
         color: white;
-        font-size: 1.16rem;
-        line-height: 4rem;
-
-        &[active], &:hover { // If this is the active link or we're hovering over the link
-            height: e("calc(4rem - 3px)");
-        }
+        cursor: pointer;
 
         &[active]:not(:hover){ // If this is the active link
             border-bottom: 3px solid @darkBlue;
@@ -79,4 +74,38 @@ div[data-isupportjolla-component="navigation"]{
             opacity: 0.5;
         }
     }
+
+    // #endregion
+
+    // #region Full-Nav and Language-Nav
+
+    &:not([data-isupportjolla-type="language"]){ // Full-Nav (not language type)
+        min-height: 4rem;
+        border-top: 2px solid @darkBlue;
+
+        & > a {
+            font-size: 1.16rem;
+            line-height: 4rem;
+
+            &[active], &:hover { // If this is the active link or we're hovering over the link
+                height: e("calc(4rem - 3px)");
+            }
+        }
+    }
+
+    &[data-isupportjolla-type="language"]{ // Language-Nav
+        min-height: 2.5rem;
+        border-bottom: 2px solid @darkBlue;
+
+        & > a {
+            font-size: 1rem;
+            line-height: 2.5rem;
+
+            &[active], &:hover { // If this is the active link or we're hovering over the link
+                height: e("calc(2.5rem - 3px)");
+            }
+        }
+    }
+
+    // #endregion
 }

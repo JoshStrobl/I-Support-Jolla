@@ -2,6 +2,10 @@
 
 var twttr : any; // DefinitelyTyped definition for Twitter is currently outdated (we'll work on it and contribute upstream). Until then, set as any.
 
+interface ConfigOptions extends Object {
+    Languages : string;
+}
+
 interface LetterAuthor extends Object {
     Avatar : string;
     Name : string;

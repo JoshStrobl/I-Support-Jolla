@@ -60,7 +60,7 @@ module isupportjolla.twitter {
                     "height" : 400,
                     "border" : "#ffffff",
                     "chrome" : "noheader,nofooter,noborders,transparent",
-                    "lang" : isupportjolla.GetLanguage(),
+                    "lang" : isupportjolla.lang.GetLanguage(),
                     "tweetLimit" : 10
                 });
             } else { // If Twitter is blocked
@@ -80,7 +80,7 @@ module isupportjolla.twitter {
                     "height" : 400,
                     "border" : "#ffffff",
                     "chrome" : "noheader,nofooter,noborders,transparent",
-                    "lang" : isupportjolla.GetLanguage(),
+                    "lang" : isupportjolla.lang.GetLanguage(),
                     "tweetLimit" : 5,
                     "limit" : 5
                 });

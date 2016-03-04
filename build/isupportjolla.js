@@ -17,14 +17,34 @@ var isupportjolla;
 var twttr;
 var isupportjolla;
 (function (isupportjolla) {
-    function GetDirection() {
-        return document.body.getAttribute("dir");
-    }
-    isupportjolla.GetDirection = GetDirection;
-    function GetLanguage() {
-        return document.querySelector("html").getAttribute("lang");
-    }
-    isupportjolla.GetLanguage = GetLanguage;
+    var lang;
+    (function (lang) {
+        function GetDirection() {
+            return document.body.getAttribute("dir");
+        }
+        lang.GetDirection = GetDirection;
+        function GetLanguage() {
+            return document.querySelector("html").getAttribute("lang");
+        }
+        lang.GetLanguage = GetLanguage;
+        function PropagateLanguageBar() {
+            if ((typeof isupportjolla.Config.Languages == "string") && (isupportjolla.Config.Languages.length !== 0)) {
+                var languageBar = document.querySelector('header > div[data-isupportjolla-component="navigation"][data-isupportjolla-type="language"]');
+                var languagesArray = isupportjolla.Config.Languages.split(",");
+                var pageURL = document.location.href;
+                var rootURL = pageURL.substr(0, pageURL.lastIndexOf("/") - 2);
+                var htmlFile = document.location.href.substr(pageURL.lastIndexOf("/"));
+                for (var _i = 0; _i < languagesArray.length; _i++) {
+                    var language = languagesArray[_i];
+                    var newLink = document.createElement("a");
+                    newLink.href = rootURL + language + htmlFile;
+                    newLink.textContent = language;
+                    languageBar.appendChild(newLink);
+                }
+            }
+        }
+        lang.PropagateLanguageBar = PropagateLanguageBar;
+    })(lang = isupportjolla.lang || (isupportjolla.lang = {}));
 })(isupportjolla || (isupportjolla = {}));
 var isupportjolla;
 (function (isupportjolla) {
@@ -212,7 +232,7 @@ var isupportjolla;
                         "height": 400,
                         "border": "#ffffff",
                         "chrome": "noheader,nofooter,noborders,transparent",
-                        "lang": isupportjolla.GetLanguage(),
+                        "lang": isupportjolla.lang.GetLanguage(),
                         "tweetLimit": 10
                     });
                 }
@@ -230,7 +250,7 @@ var isupportjolla;
                         "height": 400,
                         "border": "#ffffff",
                         "chrome": "noheader,nofooter,noborders,transparent",
-                        "lang": isupportjolla.GetLanguage(),
+                        "lang": isupportjolla.lang.GetLanguage(),
                         "tweetLimit": 5,
                         "limit": 5
                     });
@@ -289,9 +309,13 @@ var isupportjolla;
 })(isupportjolla || (isupportjolla = {}));
 var isupportjolla;
 (function (isupportjolla) {
-    function Init() {
+    function Init(options) {
         isupportjolla.PrimaryContent = document.querySelector('div[data-isupportjolla-component="primary-content"]');
         isupportjolla.Sidepane = document.querySelector('div[data-isupportjolla-component="sidepane"]');
+        if (typeof options !== "undefined") {
+            isupportjolla.Config = options;
+            isupportjolla.lang.PropagateLanguageBar();
+        }
         isupportjolla.twitter.Init();
         if (window.location.toString().indexOf("letters") !== -1) {
             isupportjolla.letters.Init();

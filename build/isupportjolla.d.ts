@@ -2,6 +2,9 @@ declare module isupportjolla.errors {
     function CreateError(type: string, message: string, autoAppendTo?: any): HTMLDivElement;
 }
 declare var twttr: any;
+interface ConfigOptions extends Object {
+    Languages: string;
+}
 interface LetterAuthor extends Object {
     Avatar: string;
     Name: string;
@@ -12,9 +15,10 @@ interface LetterMetadata extends Object {
     Author: LetterAuthor;
     Description: string;
 }
-declare module isupportjolla {
+declare module isupportjolla.lang {
     function GetDirection(): string;
     function GetLanguage(): string;
+    function PropagateLanguageBar(): void;
 }
 declare module isupportjolla.net {
     function RequestHandler(): void;
@@ -48,8 +52,9 @@ declare module isupportjolla.twitter {
     function TrackInput(): void;
 }
 declare module isupportjolla {
+    var Config: ConfigOptions;
     var PrimaryContent: Element;
     var Sidepane: Element;
-    function Init(): void;
+    function Init(options?: ConfigOptions): void;
     function GetPageWidth(): number;
 }
