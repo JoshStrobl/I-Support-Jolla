@@ -137,6 +137,9 @@
 			"it": "Vedo che stai usando noscript o che hai disabilitato i JS. Ti spiacerebbe attivare i JS per questo sito?",
 			"ru": "Видимо, Вы используете noscript или отключили JavaScript. Не могли бы Вы включить JS для этого сайта?"
 		},
+		"positive_input_text": {
+			"en" : "Input positive tweet with #ISupportJolla"
+		},
 		"screenshots_sailfishosexperience": {
 			"ar": "التالي عبارة عن لقطات مقدمة من مستخدمين يتفاخرون بلأمبيينسيس و تجربتهم! أضف لقطاتك بإستخدام  SailfishOSExperience# على تويتر.",
 			"cs": "Zde jsou některé snímky od uživatelů, kteří ukazují své zážitky ze Sailfish OS! Můžete sem přidat i své pomocí hashtagu #SailfishOSExperience na Twitteru. ",

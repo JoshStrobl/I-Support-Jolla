@@ -4,6 +4,7 @@ var twttr : any; // DefinitelyTyped definition for Twitter is currently outdated
 
 interface ConfigOptions extends Object {
     Languages : string;
+    PositiveInputText : string;
 }
 
 interface LetterAuthor extends Object {

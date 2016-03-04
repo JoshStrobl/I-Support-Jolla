@@ -4,6 +4,7 @@ declare module isupportjolla.errors {
 declare var twttr: any;
 interface ConfigOptions extends Object {
     Languages: string;
+    PositiveInputText: string;
 }
 interface LetterAuthor extends Object {
     Avatar: string;

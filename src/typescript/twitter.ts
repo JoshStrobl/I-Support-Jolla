@@ -95,7 +95,7 @@ module isupportjolla.twitter {
         isupportjolla.twitter.Form = document.querySelector('div[data-isupportjolla-component="tweet-form"]'); // Get the Tweet Form
 
         isupportjolla.twitter.FormInput = document.createElement("textarea"); // Create a textarea
-        isupportjolla.twitter.FormInput.setAttribute("placeholder", "Input positive tweet with #ISupportJolla"); // Placeholder
+        isupportjolla.twitter.FormInput.setAttribute("placeholder", isupportjolla.Config.PositiveInputText); // Placeholder
         isupportjolla.twitter.FormInput.setAttribute("maxlength", "140"); // Set maxlength to 140 characters
         isupportjolla.twitter.FormInput.setAttribute("tabindex", "1"); // Set tabindex to 1
 

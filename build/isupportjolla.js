@@ -264,7 +264,7 @@ var isupportjolla;
         function GenerateForm() {
             isupportjolla.twitter.Form = document.querySelector('div[data-isupportjolla-component="tweet-form"]');
             isupportjolla.twitter.FormInput = document.createElement("textarea");
-            isupportjolla.twitter.FormInput.setAttribute("placeholder", "Input positive tweet with #ISupportJolla");
+            isupportjolla.twitter.FormInput.setAttribute("placeholder", isupportjolla.Config.PositiveInputText);
             isupportjolla.twitter.FormInput.setAttribute("maxlength", "140");
             isupportjolla.twitter.FormInput.setAttribute("tabindex", "1");
             isupportjolla.twitter.FormButton = document.createElement("a");
