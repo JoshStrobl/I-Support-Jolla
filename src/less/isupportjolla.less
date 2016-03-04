@@ -1,19 +1,8 @@
 @import "**.less";
 
-html {
-    &:not([lang="ar"]){ // Non-Arabic languages
-        font-family: "Droid Sans"; // Use Droid Sans
-        font-size: 12px;
-    }
-
-    &[lang="ar"]{ // Arabic languages
-        font-family: "JF Flat Regular"; // Use a better looking Ar font.
-        font-size: 13px; // Slightly larger
-    }
-}
-
 body {
     .fullWidth;
+    font-stretch: condensed; // Condenses cyrillic text
     position: absolute;
     top: 0;
     left: 0;
