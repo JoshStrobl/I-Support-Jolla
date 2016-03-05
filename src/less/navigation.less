@@ -66,7 +66,6 @@ div[data-isupportjolla-component="navigation"]{
         }
 
         &:not([active]):not(:hover){ // If this is not the active link or a link we're hovering over
-            height: 4rem;
             border-bottom: 0;
         }
 
@@ -90,6 +89,10 @@ div[data-isupportjolla-component="navigation"]{
             &[active], &:hover { // If this is the active link or we're hovering over the link
                 height: e("calc(4rem - 3px)");
             }
+
+            &:not([active]):not(:hover){ // If this is not the active link or a link we're hovering over
+                height: 4rem;
+            }
         }
     }
 
@@ -103,6 +106,10 @@ div[data-isupportjolla-component="navigation"]{
 
             &[active], &:hover { // If this is the active link or we're hovering over the link
                 height: e("calc(2.5rem - 3px)");
+            }
+
+            &:not([active]):not(:hover){ // If this is not the active link or a link we're hovering over
+                height: 2.5rem;
             }
         }
     }
