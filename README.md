@@ -15,7 +15,6 @@ You can also assist with translating by pinging [@JoshStrobl](https://twitter.co
 ## TODO ##
 
 - [ ] Favicon maybe? Designers welcome.
-- [ ] Ability to submit letters of support via site and not just email.
 - [ ] Community section with resources such as blogs, developer documentation, etc.
 - [ ] New landing page at some point.
 - [ ] Replacement for Jolla Walls.
