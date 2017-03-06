@@ -13,16 +13,8 @@
 		"sr-latin"
 	],
 	"Terms": {
-		"Back": {
-			"ar": "رجوع",
-			"cs": "Zpět",
-			"en": "Back",
-			"es": "Volver",
-			"it": "Indietro",
-			"ru": "Назад",
-			"sl": "Nazaj",
-			"sr": "Назад",
-			"sr-latin": "Nazad"
+		"A vibrant community": {
+			"en": "A vibrant community."
 		},
 		"Community": {
 			"en": "Community"
@@ -85,41 +77,8 @@
 			"sr": "Хвала",
 			"sr-latin": "Hvala"
 		},
-		"ambiences_message": {
-			"ar": "نظام تشغيل سيلفش يمنحك تجربة فريدة بتخصيص كامل النظام عن طريق خاصية أمبيينسيس. ",
-			"cs": "Sailfish nabízí jednoduchou možnost přizpůsobení celého systému pomocí tzv. atmosféry - Ambience.",
-			"en": "Sailfish OS enables you to personalize the experience of the entire OS through a feature called Ambiences.",
-			"es": "Sailfish OS te permite personalizar la experiencia de todo el sistema operativo a través de una funcionalidad llamada Ambiente. ",
-			"it": "Sailfish OS ti permette di personalizzare l'esperienza dell'intero sistema operativo attraverso una funzionalità chiamata Atmosfere.",
-			"ru": "С Sailfish OS вы можете персонализировать внешний вид всей системы с помощью функциональности Атмосферы",
-			"sl": "Sailfish OS vam omogoča, da prilagodite izkušnjo celotnega operacijska sistema skozi funkcijo imenovano Ambiences - Vzdušja.",
-			"sr": "Sailfish OS вам омогућава да прилагодите доживљај целог система користећи функционалност звану Атмосфере.",
-			"sr-latin": "Sailfish OS vam omogućava da prilagodite doživljaj celog sistema koristeći funkcionalnost zvanu Atmosfere."
-		},
-		"boat_fixing": {
-			"ar": "أحياناً, القارب سيحتاج إلى التصليح.",
-			"cs": "Loď potřebuje někdy opravit.",
-			"en": "Sometimes a boat needs fixing.",
-			"es": "A veces un barco necesita repararse",
-			"it": "A volte una barca ha bisogno di riparazioni.",
-			"ru": "Иногда «лодку» приходится чинить",
-			"sl": "Včasih je čoln potreben popravila.",
-			"sr": "Понекад је брод потребно поправити.",
-			"sr-latin": "Ponekad je brod potrebno popraviti."
-		},
 		"diverse_sailfish": {
 			"en": "The community is showing how diverse Sailfish OS can be with photos of their Sailfish experiences."
-		},
-		"full_list": {
-			"ar": "القائمة الكاملة هنا.",
-			"cs": "Celý seznam zde.",
-			"en": "Full list here.",
-			"es": "Lista completa aquí.",
-			"it": "Qui la lista completa.",
-			"ru": "Здесь можно найти полный список",
-			"sl": "Celoten seznam tu.",
-			"sr": "Комплетна листа овде.",
-			"sr-latin": "Kompletna lista ovde."
 		},
 		"javascript_functionality": {
 			"ar": "الجافاسكربت -JavaScript- يستخدم لـTwitter API و لوظائف موقعنا الخاصة.",
@@ -132,20 +91,6 @@
 			"sr": "JavaScript се користи за Твитеров програмски интерфејс и рад нашег сајта.",
 			"sr-latin": "JavaScript se koristi za Twitter programski interfejs i rad našeg sajta."
 		},
-		"join_telegram_group": {
-			"en": "Join the Telegram Group and talk to other Jolla supporters."
-		},
-		"list_positivity": {
-			"ar": "يتم تحديث القائمة يدوياً. الرسائل الإيجابية فقط مسموحة.",
-			"cs": "Seznam je aktualizován ručně. Povoleny jen pozitivní zprávy.",
-			"en": "List is manually updated. Only positivity allowed.",
-			"es": "La lista se actualiza manualmente. Sólo se admite lo positivo.",
-			"it": "La lista viene aggiornata manualmente. Consentita solo positività.",
-			"ru": "Список обновляется вручную. Будьте позитивны.",
-			"sl": "Seznam je ročno posodobljen. Dovoljena je samo pozitivnost.",
-			"sr": "Листа се ажурира ручно. Будите позитивни.",
-			"sr-latin": "Lista se ažurira ručno. Budite pozitivni."
-		},
 		"noscript_detected": {
 			"ar": "لاحظت أنك تستخدم noscript أو  أنك لم تمكن الجافاسكربت-JS. هل من الممكن تمكين الجافاسكربت-JS-على هذا الموقع؟",
 			"cs": "Vypadá to, že používáte noscript nebo je JS deaktivovaný. Co třeba zapnout JS pro tento web?",
@@ -157,28 +102,20 @@
 			"sr": "Видимо да користите noscript или вам је JavaScript онемогућен. Да ли бисте били љубазни да омогућите JavaScript за овај сајт?",
 			"sr-latin": "Vidimo da koristite noscript ili vam je JavaScript onemogućen. Da li biste bili ljubazni da omogućite JavaScript za ovaj sajt?"
 		},
-		"positive_input_text": {
-			"ar": "ضع تغرية إيجابية بإستخدام ISupportJolla#",
-			"cs": "Napište svůj pozitivní tweet s hashtagem #ISupportJolla",
-			"en": "Input positive tweet with #ISupportJolla",
-			"es": "Escribe un tuit positivo con #ISupportJolla",
-			"sl": "Vnesite pozitiven Tvit z #ISupportJolla",
-			"sr": "Унесите позитиван Твит са #ISupportJolla",
-			"sr-latin": "Unesite pozitivan Tvit sa #ISupportJolla"
-		},
-		"press_for_link": {
-			"en": "Press three times for link."
+		"sailor_feed_messages": {
+			"en": "Below are kind remarks from around the world by the community. Get yours added by tweeting with the hashtag #ISupportJolla."
 		},
 		"screenshots_sailfishosexperience": {
-			"ar": "التالي عبارة عن لقطات مقدمة من مستخدمين يتفاخرون بلأمبيينسيس و تجربتهم! أضف لقطاتك بإستخدام  SailfishOSExperience# على تويتر.",
-			"cs": "Zde jsou některé snímky od uživatelů, kteří ukazují své zážitky ze Sailfish OS! Můžete sem přidat i své pomocí hashtagu #SailfishOSExperience na Twitteru. ",
-			"en": "Below are some screenshots taken by users, showing off their Sailfish OS Ambiences and experience! Get yours added by using #SailfishOSExperience on Twitter.",
-			"es": "Estas son algunas de las capturas de pantalla que los usuarios han hecho para mostrar sus Ambientes y su experiencia con Sailfish OS! Añade las tuyas usando #SailfishOSExperience en Twitter.",
-			"it": "Qui di seguito alcune schermate catturate dagli utenti, per mettere in mostra le loro Atmosfere e la loro esperienza con Sailfish OS! Fai aggiungere anche le tue usando #SailfishOSExperience su Twitter.",
-			"ru": "Ниже представлены скриншоты, сделанные пользователями Sailfish OS, демонстрирующие их Атмосферы и опыт работы с системой. Добавляйте свои с хэштегом #SailfishOSExperience в Твиттере",
-			"sl": "Spodaj je nekaj zaslonskih slik od uporabnikov, ki razkazujejo njihova Sailfish OS Vzdušja in izkušnje! Dodajte še svoje na Twitter-ju z uporabo #SailfishOSExperience.",
-			"sr": "Испод се налазе слике екрана направљене од стране корисника које показују њихове Sailfish OS Атмосфере и доживљај! Додај своје користећи #SailfishOSExperience на Твитеру.",
-			"sr-latin": "Ispod se nalaze slike ekrana napravljene od strane korisnika koje pokazuju njihove Sailfish OS Atmosfere i doživljaj! Dodaj svoje koristeći #SailfishOSExperience na Tviteru."
+			"en": "Below are some screenshots taken by users, showing off their Sailfish OS experience! Get yours added by using #SailfishOSExperience on Twitter."
+		},
+		"interest_fellow_fans": {
+			"en": "If you're interested in taking to fellow fans, we welcome you to join the unofficial Sailfish OS Fan Club on Telegram."
+		},
+		"interest_official": {
+			"en": "If you want to learn about official ways of joining the dicussion and getting involved, head over to SailfishOS.org's Community page."
+		},
+		"vibrant_community_message": {
+			"en": "The Sailfish OS community is vibrant, full of developers, users, and fans alike."
 		}
 	}
 }
