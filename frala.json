@@ -24,6 +24,9 @@
 			"sr": "Назад",
 			"sr-latin": "Nazad"
 		},
+		"Community": {
+			"en": "Community"
+		},
 		"Home": {
 			"ar": "الصفحة الرئيسية",
 			"cs": "Domů",
@@ -34,17 +37,6 @@
 			"sl": "Domov",
 			"sr": "Почетна страна",
 			"sr-latin": "Početna strana"
-		},
-		"Letters": {
-			"ar": "الرسائل",
-			"cs": "Dopisy",
-			"en": "Letters",
-			"es": "Cartas",
-			"it": "Lettere",
-			"ru": "Письма",
-			"sl": "Pisma",
-			"sr": "Писма",
-			"sr-latin": "Pisma"
 		},
 		"Sailfish Experience": {
 			"ar": "Sailfish تجربة",
@@ -68,16 +60,8 @@
 			"sr": "Вести од Морнара",
 			"sr-latin": "Vesti od Mornara"
 		},
-		"Support": {
-			"ar": "الدعم",
-			"cs": "Podpořte",
-			"en": "Support",
-			"es": "Apoyo a",
-			"it": "Supporta",
-			"ru": "Поддержка",
-			"sl": "Podpora",
-			"sr": "Подржи",
-			"sr-latin": "Podrži"
+		"ISupportJolla": {
+			"en": "I Support Jolla"
 		},
 		"Telegram Group": {
 			"ar": "مجموعة تليغرام",
@@ -123,8 +107,8 @@
 			"sr": "Понекад је брод потребно поправити.",
 			"sr-latin": "Ponekad je brod potrebno popraviti."
 		},
-		"diverse_sailfish" : {
-			"en" : "The community is showing how diverse Sailfish OS can be with photos of their Sailfish experiences."
+		"diverse_sailfish": {
+			"en": "The community is showing how diverse Sailfish OS can be with photos of their Sailfish experiences."
 		},
 		"full_list": {
 			"ar": "القائمة الكاملة هنا.",
@@ -149,18 +133,7 @@
 			"sr-latin": "JavaScript se koristi za Twitter programski interfejs i rad našeg sajta."
 		},
 		"join_telegram_group": {
-			"en" : "Join the Telegram Group and talk to other Jolla supporters."
-		},
-		"letters_from_community": {
-			"ar": "هذه الرسائل مرسلة من قبل المجتمع الداعم لـ !Jolla ",
-			"cs": "Tyto dopisy zaslala komunita na podporu Jolly!",
-			"en": "These are letters sent in by the community supporting Jolla!",
-			"es": "¡Estas son las cartas enviadas por la comunidad para apoyar a Jolla!",
-			"it": "Queste sono lettere inviate dalla comunità a supporto di Jolla!",
-			"ru": "Письма из сообщества поддержки Jolla",
-			"sl": "Ta pisma smo prejeli od skupnosti, ki podpira podjetje Jolla!",
-			"sr": "Писма подршке из Jolla заједнице.",
-			"sr-latin": "Pisma podrške iz Jolla zajednice."
+			"en": "Join the Telegram Group and talk to other Jolla supporters."
 		},
 		"list_positivity": {
 			"ar": "يتم تحديث القائمة يدوياً. الرسائل الإيجابية فقط مسموحة.",
@@ -172,17 +145,6 @@
 			"sl": "Seznam je ročno posodobljen. Dovoljena je samo pozitivnost.",
 			"sr": "Листа се ажурира ручно. Будите позитивни.",
 			"sr-latin": "Lista se ažurira ručno. Budite pozitivni."
-		},
-		"load_widget": {
-			"ar": "حمل التطبيق المصغر لتويتر",
-			"cs": "Načíst Twitter Widget",
-			"en": "Load Twitter Widget",
-			"es": "Carga el widget de Twitter",
-			"it": "Carica il widget di Twitter",
-			"ru": "Загрузить виджет Твиттера",
-			"sl": "Naloži Twitter Gradnik",
-			"sr": "Учитај Твитер виџет",
-			"sr-latin": "Učitaj Tviter vidžet"
 		},
 		"noscript_detected": {
 			"ar": "لاحظت أنك تستخدم noscript أو  أنك لم تمكن الجافاسكربت-JS. هل من الممكن تمكين الجافاسكربت-JS-على هذا الموقع؟",
@@ -204,8 +166,8 @@
 			"sr": "Унесите позитиван Твит са #ISupportJolla",
 			"sr-latin": "Unesite pozitivan Tvit sa #ISupportJolla"
 		},
-		"press_for_link" : {
-			"en" : "Press three times for link."
+		"press_for_link": {
+			"en": "Press three times for link."
 		},
 		"screenshots_sailfishosexperience": {
 			"ar": "التالي عبارة عن لقطات مقدمة من مستخدمين يتفاخرون بلأمبيينسيس و تجربتهم! أضف لقطاتك بإستخدام  SailfishOSExperience# على تويتر.",
@@ -217,39 +179,6 @@
 			"sl": "Spodaj je nekaj zaslonskih slik od uporabnikov, ki razkazujejo njihova Sailfish OS Vzdušja in izkušnje! Dodajte še svoje na Twitter-ju z uporabo #SailfishOSExperience.",
 			"sr": "Испод се налазе слике екрана направљене од стране корисника које показују њихове Sailfish OS Атмосфере и доживљај! Додај своје користећи #SailfishOSExperience на Твитеру.",
 			"sr-latin": "Ispod se nalaze slike ekrana napravljene od strane korisnika koje pokazuju njihove Sailfish OS Atmosfere i doživljaj! Dodaj svoje koristeći #SailfishOSExperience na Tviteru."
-		},
-		"show_support": {
-			"ar": "أظهر دعمك لـ Jolla و لزملائك البحارة.",
-			"cs": "Projevte svou podporu Jolle a svým přátelům.",
-			"en": "Show your support for Jolla and your fellow Sailors.",
-			"es": "Muestra tu apoyo a Jolla y a tus compañeros marineros.",
-			"it": "Mostra il tuo supporto per Jolla e i tuoi compagni Marinai.",
-			"ru": "Выразите свою поддержку Jolla и дружественным Морякам",
-			"sl": "Pokažite svojo podporo za podjetje Jolla in druge Mornarje.",
-			"sr": "Изразите подршку за Jolla и ваше колеге Морнаре.",
-			"sr-latin": "Izrazite podršku za Jolla i vaše kolege Mornare."
-		},
-		"submit_publication": {
-			"ar": "يمكنك ارسال رسائلك لننشرها على ",
-			"cs": "Svůj dopis můžete zaslat na",
-			"en": "You can submit your own letters for publication to",
-			"es": "Puedes enviar tus propias cartas para su publicación a ",
-			"it": "Puoi inviare le tue lettere per la pubblicazione a",
-			"ru": "Сюда Вы можете отправить письма для публикации",
-			"sl": "Tudi sami lahko pošljete pisma za objavo na",
-			"sr": "Можете послати своја писма за публикацију на",
-			"sr-latin": "Možete poslati svoja pisma za publikaciju na"
-		},
-		"tweet_support": {
-			"ar": "غرد بإستخدام ISupportJolla# لإظهار دعمك!",
-			"cs": "Tweetněte s hashtagem #ISupportJolla a ukažte svou podporu!",
-			"en": "Tweet with #ISupportJolla to show your support!",
-			"es": "¡Tuitea con #ISupportJolla para mostrar tu apoyo!",
-			"it": "Twitta con #ISupportJolla per manifestare il tuo supporto!",
-			"ru": "Пишите твиты с хэштегом #IsupportJolla, что бы выразить свою поддержку!",
-			"sl": "Tvitajte z #ISupportJolla, da pokažete svojo podporo!",
-			"sr": "Твитујте са #ISupportJolla да изразите вашу подршку!",
-			"sr-latin": "Tvitujte sa #ISupportJolla da izrazite vašu podršku!"
 		}
 	}
 }
