@@ -1,1 +1,34 @@
-{"Name":"ISupportJolla","ContentTypes":["go","html","less","typescript"],"Go":{"CompileFromRoot":false,"Branches":{"LetterServer":{"BinaryName":"letterserver","DoInstall":false,"SourcesToInclude":["src/go/*"]}}},"LESS":{"Branches":{"isupportjolla":{"AdditionalCompileOptions":null,"FileName":"isupportjolla","SourcesToInclude":null,"UniqueHash":false,"UseGlob":true}}},"TypeScript":{"LibreJSLicense":"Apache-2.0","MinifyContent":true,"Target":"ES5","UniqueHash":false,"UseLibreJSHeader":true},"UsesTests":true}
+{
+	"Name": "I-Support-Jolla",
+	"ContentTypes": [
+		"html",
+		"less",
+		"typescript"
+	],
+	"Go": {
+		"CompileFromRoot": false,
+		"Branches": null
+	},
+	"HTML": {
+		"EnableFrala": true
+	},
+	"LESS": {
+		"Branches": {
+			"master": {
+				"AdditionalCompileOptions": null,
+				"FileName": "isupportjolla",
+				"SourcesToInclude": null,
+				"UniqueHash": false,
+				"UseGlob": true
+			}
+		}
+	},
+	"TypeScript": {
+		"LibreJSLicense": "Apache-2.0",
+		"MinifyContent": true,
+		"Target": "ES5",
+		"UniqueHash": false,
+		"UseLibreJSHeader": true
+	},
+	"UsesTests": true
+}

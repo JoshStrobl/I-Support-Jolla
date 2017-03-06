@@ -123,6 +123,9 @@
 			"sr": "Понекад је брод потребно поправити.",
 			"sr-latin": "Ponekad je brod potrebno popraviti."
 		},
+		"diverse_sailfish" : {
+			"en" : "The community is showing how diverse Sailfish OS can be with photos of their Sailfish experiences."
+		},
 		"full_list": {
 			"ar": "القائمة الكاملة هنا.",
 			"cs": "Celý seznam zde.",
@@ -144,6 +147,9 @@
 			"sl": "JavaScript je uporabljen za Twitter-jev programski vmesnik in delovanje naše spletne strani.",
 			"sr": "JavaScript се користи за Твитеров програмски интерфејс и рад нашег сајта.",
 			"sr-latin": "JavaScript se koristi za Twitter programski interfejs i rad našeg sajta."
+		},
+		"join_telegram_group": {
+			"en" : "Join the Telegram Group and talk to other Jolla supporters."
 		},
 		"letters_from_community": {
 			"ar": "هذه الرسائل مرسلة من قبل المجتمع الداعم لـ !Jolla ",
@@ -197,6 +203,9 @@
 			"sl": "Vnesite pozitiven Tvit z #ISupportJolla",
 			"sr": "Унесите позитиван Твит са #ISupportJolla",
 			"sr-latin": "Unesite pozitivan Tvit sa #ISupportJolla"
+		},
+		"press_for_link" : {
+			"en" : "Press three times for link."
 		},
 		"screenshots_sailfishosexperience": {
 			"ar": "التالي عبارة عن لقطات مقدمة من مستخدمين يتفاخرون بلأمبيينسيس و تجربتهم! أضف لقطاتك بإستخدام  SailfishOSExperience# على تويتر.",

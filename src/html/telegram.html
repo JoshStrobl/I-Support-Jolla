@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" lang="{{ type="term" src="frala.DefaultLanguage" }}">
+	<head>
+		<title>I Support Jolla | {{ type="term" src="Telegram Group" }}</title>
+        <meta name="description" content="{{ type="term" src="join_telegram_group" }}" />
+		<!-- OpenGraph -->
+		<meta property="og:title" content="I Support Jolla | {{ type="term" src="Telegram Group" }}" />
+		<meta property="og:description" content="{{ type="term" src="join_telegram_group" }}" />
+		<!-- Twitter Card -->
+		<meta name="twitter:title" content="I Support Jolla | {{ type="term" src="Telegram Group" }}" />
+		<meta name="twitter:description" content="{{ type="term" src="join_telegram_group" }}" />
+		<!-- End of Twitter Card -->
+		{{ type="fragment" src="fragments/shared-metadata.html" }}
+	</head>
+	<body dir="{{ type="term" src="frala.Direction" }}">
+		{{ type="fragment" src="fragments/header.html" }}
+		<!-- Page Content -->
+		<div data-isupportjolla-component="page">
+            <!-- Full-width Content Area -->
+            <div data-isupportjolla-component="fullwidth-content" data-isupportjolla-page="sailfish">
+                {{ type="term" src="press_for_link" }}
+                <div data-isupportjolla-component="button" data-is-for-link></div>
+                {{ type="fragment" src="fragments/noscript.html" }}
+            </div>
+			<!-- End of Full-width Content Area -->
+		</div>
+		<!-- End of Page Content -->
+		{{ type="fragment" src="fragments/footer.html" }}
+	</body>
+</html>
