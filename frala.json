@@ -2,15 +2,7 @@
 	"DefaultLanguage": "en",
 	"Direction": "ltr",
 	"Languages": [
-		"ar",
-		"cs",
-		"en",
-		"es",
-		"it",
-		"ru",
-		"sl",
-		"sr",
-		"sr-latin"
+		"en"
 	],
 	"Terms": {
 		"A vibrant community": {
@@ -76,9 +68,6 @@
 			"sl": "Najlepša hvala",
 			"sr": "Хвала",
 			"sr-latin": "Hvala"
-		},
-		"diverse_sailfish": {
-			"en": "The community is showing how diverse Sailfish OS can be with photos of their Sailfish experiences."
 		},
 		"javascript_functionality": {
 			"ar": "الجافاسكربت -JavaScript- يستخدم لـTwitter API و لوظائف موقعنا الخاصة.",
