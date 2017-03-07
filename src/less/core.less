@@ -45,7 +45,32 @@ html {
 	}
 
 	body {
+		color: @text;
 		min-height: 100%;
 		margin: 0;
+
+		h1, h2 {
+			color: @primaryColor;
+			font-weight: normal;
+		}
+
+		h1 {
+			font-size: 1.8em;
+		}
+
+		h2 {
+			font-size: 1.6em;
+		}
+
+		b {
+			color: @primaryColor;
+		}
+
+		div[data-isupportjolla="view-container"] a,
+		footer a {
+			color: @primaryColor;
+			text-decoration: none;
+			border-bottom: 2px solid @primaryColor;
+		}
 	}
 }

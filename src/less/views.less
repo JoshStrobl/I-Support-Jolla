@@ -4,13 +4,13 @@
 
 body {
 	&:not([dir="rtl"]){ // LTR
-		& > div[data-isupportjolla="view-primary"] { // Primary View
+		div[data-isupportjolla="view-primary"] { // Primary View
 			margin-right: 5%;
 		}
 	}
 
 	&[dir="rtl"] { // RTL
-		& > div[data-isupportjolla="view-primary"] { // Primary View
+		div[data-isupportjolla="view-primary"] { // Primary View
 			margin-left: 5%;
 		}
 	}
@@ -20,6 +20,9 @@ body {
 
 div[data-isupportjolla="view-container"] { // Container
 	&:extend(.contentPadding);
+	&:extend(.inlineFlex);
+
+	// #region Scalable
 
 	@media screen and (max-width: 1023px) { // Mobile
 		flex-direction: column;
@@ -46,4 +49,6 @@ div[data-isupportjolla="view-container"] { // Container
 			width: 25%;
 		}
 	}
+
+	// #endregion
 }

@@ -2,7 +2,7 @@
 
 header {
 	.fullWidth;
-	.inlineFlex;
+	&:extend(.inlineFlex);
 	flex-direction: column;
 	background-color: @primaryColor;
 
@@ -16,7 +16,7 @@ header {
 
 	& > div[data-isupportjolla="header-content"] { // Majority of Header Content
 		&:extend(.contentPadding);
-		.inlineFlex;
+		&:extend(.inlineFlex);
 
 		// #region Scalable
 
