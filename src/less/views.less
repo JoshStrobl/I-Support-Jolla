@@ -26,6 +26,8 @@ div[data-isupportjolla="view-container"] { // Container
 
 	@media screen and (max-width: 1023px) { // Mobile
 		flex-direction: column;
+		margin-top: 5%;
+		margin-bottom: 5%;
 
 		& > div[data-isupportjolla="view-primary"] { // Primary View
 			.fullWidth;
@@ -37,10 +39,14 @@ div[data-isupportjolla="view-container"] { // Container
 
 		& > div[data-isupportjolla="view-secondary"] { // Secondary View
 			.fullWidth;
+			margin-top: 5%;
 		}
 	}
 
 	@media screen and (min-width: 1024px) { // Non-Mobile
+		margin-top: 1.5%;
+		margin-bottom: 1.5%;
+
 		& > div[data-isupportjolla="view-primary"] { // Primary View
 			width: 70%;
 		}
@@ -53,7 +59,6 @@ div[data-isupportjolla="view-container"] { // Container
 	// #endregion
 
 	& > div[data-isupportjolla="view-primary"] { // Primary View
-
 		& > span { // Button Container
 			display: block;
 		}

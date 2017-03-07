@@ -8,10 +8,15 @@ header {
 
 	& > div[data-isupportjolla="lang-nav"] { // Language Nav
 		&:extend(.contentPadding);
-		.fullWidth;
 		height: 30px;
 		font-size: 1.4em;
 		background-color: darken(@primaryColor, 10%);
+
+		& > a {
+			color: @contrastPrimary;
+			font-size: 0.8em;
+			text-decoration: none;
+		}
 	}
 
 	& > div[data-isupportjolla="header-content"] { // Majority of Header Content
@@ -21,11 +26,17 @@ header {
 		// #region Scalable
 
 		@media screen and (max-width: 1023px) { // Mobile
-			height: 70px;
+			flex-direction: column;
+			height: auto;
+			margin: 5% 0;
 
 			& > img { // Logo
 				width: 40%;
-				margin: auto 0;
+				margin-bottom: 5%;
+			}
+
+			& > a {
+				line-height: 1.5em;
 			}
 		}
 
