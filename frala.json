@@ -2,14 +2,17 @@
 	"DefaultLanguage": "en",
 	"Direction": "ltr",
 	"Languages": [
-		"en"
+		"en",
+		"es"
 	],
 	"Terms": {
 		"A vibrant community": {
-			"en": "A vibrant community."
+			"en": "A vibrant community.",
+			"es": "Una comunidad vibrante."
 		},
 		"Community": {
-			"en": "Community"
+			"en": "Community",
+			"es": "Comunidad"
 		},
 		"Home": {
 			"ar": "الصفحة الرئيسية",
@@ -21,6 +24,10 @@
 			"sl": "Domov",
 			"sr": "Почетна страна",
 			"sr-latin": "Početna strana"
+		},
+		"ISupportJolla": {
+			"en": "I Support Jolla",
+			"es": "Yo apoyo a Jolla"
 		},
 		"Sailfish Experience": {
 			"ar": "Sailfish تجربة",
@@ -43,9 +50,6 @@
 			"sl": "Vir Mornarjev",
 			"sr": "Вести од Морнара",
 			"sr-latin": "Vesti od Mornara"
-		},
-		"ISupportJolla": {
-			"en": "I Support Jolla"
 		},
 		"Telegram Group": {
 			"ar": "مجموعة تليغرام",
@@ -70,18 +74,27 @@
 			"sr-latin": "Hvala"
 		},
 		"Why I support Jolla and you should too.": {
-			"en": "Why I support Jolla and you should too."
+			"en": "Why I support Jolla and you should too.",
+			"es": "Por qué apoyo a Jolla y tú también deberías hacerlo."
 		},
 		"full_list": {
 			"ar": "القائمة الكاملة هنا.",
 			"cs": "Celý seznam zde.",
 			"en": "Full list here.",
-			"es": "Lista completa aquí.",
+			"es": "Listado completo aquí.",
 			"it": "Qui la lista completa.",
 			"ru": "Здесь можно найти полный список",
 			"sl": "Celoten seznam tu.",
 			"sr": "Комплетна листа овде.",
 			"sr-latin": "Kompletna lista ovde."
+		},
+		"interest_fellow_fans": {
+			"en": "If you're interested in talking to fellow fans, we welcome you to join the unofficial Sailfish OS Fan Club on Telegram.",
+			"es": "Si estás interesado en hablar con otros seguidores, te damos la bienvenida al grupo no oficial del Club de Fans de Sailfish en Telegram."
+		},
+		"interest_official": {
+			"en": "If you want to learn about official ways of joining the dicussion and getting involved, head over to SailfishOS.org's Community page.",
+			"es": "Si quieres saber de forma oficial cómo unirte al debate y participar, visita la página de la Comunidad en SailfishOS.org."
 		},
 		"javascript_functionality": {
 			"ar": "الجافاسكربت -JavaScript- يستخدم لـTwitter API و لوظائف موقعنا الخاصة.",
@@ -106,19 +119,16 @@
 			"sr-latin": "Vidimo da koristite noscript ili vam je JavaScript onemogućen. Da li biste bili ljubazni da omogućite JavaScript za ovaj sajt?"
 		},
 		"sailor_feed_messages": {
-			"en": "Below are kind remarks from around the world by the community. Get yours added by tweeting with the hashtag #ISupportJolla."
+			"en": "Below are kind remarks from around the world by the community. Get yours added by tweeting with the hashtag #ISupportJolla.",
+			"es": "A continuación se muestran los comentarios amables de la comunidad en todo el mundo. Añade los tuyos tuiteando con el hashtag #ISupportJolla."
 		},
 		"screenshots_sailfishosexperience": {
-			"en": "Below are some screenshots taken by users, showing off their Sailfish OS experience! Get yours added by using #SailfishOSExperience on Twitter."
-		},
-		"interest_fellow_fans": {
-			"en": "If you're interested in talking to fellow fans, we welcome you to join the unofficial Sailfish OS Fan Club on Telegram."
-		},
-		"interest_official": {
-			"en": "If you want to learn about official ways of joining the dicussion and getting involved, head over to SailfishOS.org's Community page."
+			"en": "Below are some screenshots taken by users, showing off their Sailfish OS experience! Get yours added by using #SailfishOSExperience on Twitter.",
+			"es": "A continuación se muestran las capturas de pantalla de algunos usuarios, ¡mostrando su experiencia con el SO Sailfish! Añade las tuyas en Twitter usando #SailfishOSExperience."
 		},
 		"vibrant_community_message": {
-			"en": "The Sailfish OS community is vibrant, full of developers, users, and fans alike."
+			"en": "The Sailfish OS community is vibrant, full of developers, users, and fans alike.",
+			"es": "La comunidad de Sailfish OS es vibrante, llena de desarrolladores, usuarios, y seguidores por igual."
 		}
 	}
 }
