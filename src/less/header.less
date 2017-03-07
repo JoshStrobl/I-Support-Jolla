@@ -8,9 +8,24 @@ header {
 
 	& > div[data-isupportjolla="lang-nav"] { // Language Nav
 		&:extend(.contentPadding);
-		height: 30px;
 		font-size: 1.4em;
 		background-color: darken(@primaryColor, 10%);
+
+		@media screen and (max-width: 1023px) { // Mobile
+			min-height: 30px;
+
+			& > a {
+				margin: 1.5%;
+			}
+		}
+
+		@media screen and (min-width: 1024px) { // Non-Mobile
+			height: 30px;
+
+			& > a {
+				margin: 1%;
+			}
+		}
 
 		& > a {
 			color: @contrastPrimary;

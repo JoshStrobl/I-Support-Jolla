@@ -1,0 +1,63 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"Content-Type: \n"
+"Content-Transfer-Encoding: \n"
+
+msgid "A vibrant community"
+msgstr "A vibrant community."
+
+msgid "Community"
+msgstr "Community"
+
+msgid "Home"
+msgstr "Home"
+
+msgid "ISupportJolla"
+msgstr "I Support Jolla"
+
+msgid "Sailfish Experience"
+msgstr "Sailfish Experience"
+
+msgid "Sailor Feed"
+msgstr "Sailor Feed"
+
+msgid "Telegram Group"
+msgstr "Telegram Group"
+
+msgid "Thank You"
+msgstr "Thank You"
+
+msgid "Why I support Jolla and you should too."
+msgstr "Why I support Jolla and you should too."
+
+msgid "full_list"
+msgstr "Full list here."
+
+msgid "interest_fellow_fans"
+msgstr "If you're interested in talking to fellow fans, we welcome you to join the unofficial Sailfish OS Fan Club on Telegram."
+
+msgid "interest_official"
+msgstr "If you want to learn about official ways of joining the dicussion and getting involved, head over to SailfishOS.org's Community page."
+
+msgid "javascript_functionality"
+msgstr "JavaScript is used for the Twitter API and our own site functionality."
+
+msgid "noscript_detected"
+msgstr "I see you're using noscript or have JS disabled. Mind enabling JS for this site?"
+
+msgid "sailor_feed_messages"
+msgstr "Below are kind remarks from around the world by the community. Get yours added by tweeting with the hashtag #ISupportJolla."
+
+msgid "screenshots_sailfishosexperience"
+msgstr "Below are some screenshots taken by users, showing off their Sailfish OS experience! Get yours added by using #SailfishOSExperience on Twitter."
+
+msgid "vibrant_community_message"
+msgstr "The Sailfish OS community is vibrant, full of developers, users, and fans alike."
+

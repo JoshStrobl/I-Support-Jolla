@@ -1,0 +1,63 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"Content-Type: \n"
+"Content-Transfer-Encoding: \n"
+
+msgid "A vibrant community"
+msgstr "Term A vibrant community is not translated into ru"
+
+msgid "Community"
+msgstr "Term Community is not translated into ru"
+
+msgid "Home"
+msgstr "Главная"
+
+msgid "ISupportJolla"
+msgstr "Term ISupportJolla is not translated into ru"
+
+msgid "Sailfish Experience"
+msgstr "Впечатления от Sailfish"
+
+msgid "Sailor Feed"
+msgstr "Новости от Моряков"
+
+msgid "Telegram Group"
+msgstr "Группа в Telegram'е"
+
+msgid "Thank You"
+msgstr "Спасибо"
+
+msgid "Why I support Jolla and you should too."
+msgstr "Term Why I support Jolla and you should too. is not translated into ru"
+
+msgid "full_list"
+msgstr "Здесь можно найти полный список"
+
+msgid "interest_fellow_fans"
+msgstr "Term interest_fellow_fans is not translated into ru"
+
+msgid "interest_official"
+msgstr "Term interest_official is not translated into ru"
+
+msgid "javascript_functionality"
+msgstr "JavaScript используется для API Твиттера и функционирования нашего сайта"
+
+msgid "noscript_detected"
+msgstr "Видимо, Вы используете noscript или отключили JavaScript. Не могли бы Вы включить JS для этого сайта?"
+
+msgid "sailor_feed_messages"
+msgstr "Term sailor_feed_messages is not translated into ru"
+
+msgid "screenshots_sailfishosexperience"
+msgstr "Term screenshots_sailfishosexperience is not translated into ru"
+
+msgid "vibrant_community_message"
+msgstr "Term vibrant_community_message is not translated into ru"
+

@@ -1,0 +1,63 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sl\n"
+"Content-Type: \n"
+"Content-Transfer-Encoding: \n"
+
+msgid "A vibrant community"
+msgstr "Term A vibrant community is not translated into sl"
+
+msgid "Community"
+msgstr "Term Community is not translated into sl"
+
+msgid "Home"
+msgstr "Domov"
+
+msgid "ISupportJolla"
+msgstr "Term ISupportJolla is not translated into sl"
+
+msgid "Sailfish Experience"
+msgstr "Sailfish Izkušnja"
+
+msgid "Sailor Feed"
+msgstr "Vir Mornarjev"
+
+msgid "Telegram Group"
+msgstr "Telegram Skupina"
+
+msgid "Thank You"
+msgstr "Najlepša hvala"
+
+msgid "Why I support Jolla and you should too."
+msgstr "Term Why I support Jolla and you should too. is not translated into sl"
+
+msgid "full_list"
+msgstr "Celoten seznam tu."
+
+msgid "interest_fellow_fans"
+msgstr "Term interest_fellow_fans is not translated into sl"
+
+msgid "interest_official"
+msgstr "Term interest_official is not translated into sl"
+
+msgid "javascript_functionality"
+msgstr "JavaScript je uporabljen za Twitter-jev programski vmesnik in delovanje naše spletne strani."
+
+msgid "noscript_detected"
+msgstr "Vidimo, da uporabljate noscript ali pa imate JavaScript onemogočen. Bi lahko, prosim omogočili JavaScript za to stran?"
+
+msgid "sailor_feed_messages"
+msgstr "Term sailor_feed_messages is not translated into sl"
+
+msgid "screenshots_sailfishosexperience"
+msgstr "Term screenshots_sailfishosexperience is not translated into sl"
+
+msgid "vibrant_community_message"
+msgstr "Term vibrant_community_message is not translated into sl"
+
