@@ -72,6 +72,17 @@
 		"Why I support Jolla and you should too.": {
 			"en": "Why I support Jolla and you should too."
 		},
+		"full_list": {
+			"ar": "القائمة الكاملة هنا.",
+			"cs": "Celý seznam zde.",
+			"en": "Full list here.",
+			"es": "Lista completa aquí.",
+			"it": "Qui la lista completa.",
+			"ru": "Здесь можно найти полный список",
+			"sl": "Celoten seznam tu.",
+			"sr": "Комплетна листа овде.",
+			"sr-latin": "Kompletna lista ovde."
+		},
 		"javascript_functionality": {
 			"ar": "الجافاسكربت -JavaScript- يستخدم لـTwitter API و لوظائف موقعنا الخاصة.",
 			"cs": "Používáme JavaScript, kvůli Twitter API a dalším funkcím našeho webu.",
