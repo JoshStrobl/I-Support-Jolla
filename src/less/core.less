@@ -1,120 +1,51 @@
-// This file contains the appropriate values used across the LESS
+// Core - Fonts, Mixins, Variables, etc.
 
-@primary : #195f5f;
-@secondary : lighten(@primary, 2.5%);
-@darkBlue: darken(@primary, 1.5%);
+@primaryColor: #5f92c9;
+@contrastPrimary : contrast(@primaryColor);
+@text: #333333;
 
-@link : #004f83;
-@red : lighten(red, 10%); // Prettier red
-@black : #333333; // Use a calmer dark color
-
-// #region Custom Fonts
-@font-face {
+@font-face { // Custom Font for Arabic
     font-family: "JF Flat Regular";
     font-style: normal;
     font-weight: normal;
     src: local("JF Flat Regular"),
-    url(http://isupportjolla.com/css/fonts/JF-Flat-regular.ttf) format('truetype');
+    url("http://isupportjolla.com/css/fonts/JF-Flat-regular.ttf") format("truetype");
 }
 
-// #endregion
+.contentPadding {
+	@media screen and (max-width: 1023px) { // Mobile
+		width: 90%;
+		padding: 0 5%;
+	}
 
-// #region Mixins
-
-.float{ // Float Mixin
-    float: left; // Left float
+	@media screen and (min-width: 1024px) { // Non-Mobile
+		width: e("calc(100% - 200px)");
+		padding: 0 100px;
+	}
 }
 
-.fullWidth{ // Full width of parent
-    .float; // Float
-    width: 100%; // 100% width (no shit sherlock?)
+.fullWidth {
+	width: 100%;
 }
 
-.headerStyle(@height : 2.5, @fontSize : 2.5){ // Styling for different header levels
-    .fullWidth;
-    height: auto;
-    min-height: unit(@height, rem);
-    color: @secondary;
-    font-size: unit(@fontSize, rem);
-    font-weight: normal;
-    line-height: unit(@height, rem);
+.inlineFlex {
+	display: inline-flex;
+	display: -webkit-inline-flex;
 }
 
-.horizontalAlign(@elementWidth : 2px){ // Horizontally align an Element
-    @halfElementWidth: unit((unit(@elementWidth) / 2), get-unit(@elementWidth)); // Set to half the unit (inner unit call gets the number, not unit type like px) and get-unit gets type (ex. px)
-    @halfElementWidthCalc : "calc(50% - @{halfElementWidth})";
-    margin-left: e(@halfElementWidthCalc);
-    margin-right: e(@halfElementWidthCalc);
+html {
+	height: 100%;
+
+	&[lang="ar"] { // Arabic
+		font-family: "JF Flat Regular";
+	}
+
+	&:not([lang="ar"]) { // Language is not Arabic
+		font-family: "Fira Sans";
+	}
+
+	body {
+		min-height: 100%;
+		margin: 0;
+	}
 }
-
-.notice(@fullWidth) when (@fullWidth = true){ // When fullwidth is true
-    .fullWidth; // Use fullWidth
-}
-
-.notice(@fullWidth) when (@fullWidth = false){ // When fullwidth is false
-    .float; // Only use float
-}
-
-.notice(@fullWidth){ // Notice (and Footer) styling
-    text-align: center;
-    line-height: 1.8rem;
-    margin-bottom: 2.5%;
-
-}
-
-// #endregion
-
-// #region Global Styling
-
-body {
-
-    // #region Div
-
-    div {
-        &[show]{
-            display : block;
-        }
-
-        &[hide]{
-            display: none;
-        }
-    }
-
-    // #endregion
-
-    // #region Headers
-
-    h1 { // Header level-1
-        .headerStyle();
-        margin: 0; // No margin
-    }
-
-    h2 { // Header level-2
-        .headerStyle(2, 1.4);
-        margin: 1rem 0 1rem 0; // Fixed margin on headers rather than scaling based on percentage of parent
-    }
-
-    // #endregion
-
-    // #region Links
-
-    a { // Any Link
-        color: @link;
-        text-decoration: none;
-        border-bottom: 2px solid @link;
-    }
-
-    // #endregion
-
-    // #region Span Styling
-
-    span{
-        &[type="heart"]{ // Heart coloring
-            color: @red;
-        }
-    }
-
-    // #endregion
-}
-
-// #endregion

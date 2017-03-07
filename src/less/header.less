@@ -1,81 +1,58 @@
-@import (reference) "core.less";
+// Header
 
-// #region I Support Jolla Header
+header {
+	.fullWidth;
+	.inlineFlex;
+	flex-direction: column;
+	background-color: @primaryColor;
 
-body {
-    & > header {
-        .fullWidth;
-        height: auto;
-        min-height: 300px;
-        color: white;
-        background-color: @primary;
-        overflow: hidden;
+	& > div[data-isupportjolla="lang-nav"] { // Language Nav
+		&:extend(.contentPadding);
+		.fullWidth;
+		height: 30px;
+		font-size: 1.4em;
+		background-color: darken(@primaryColor, 10%);
+	}
 
-        & > div[data-isupportjolla-component="header-content"]{
-            height: e("calc(300px - 5%)"); // Set height to 300px minus 5% margins
+	& > div[data-isupportjolla="header-content"] { // Majority of Header Content
+		&:extend(.contentPadding);
+		.inlineFlex;
 
-            // #region Scaling
+		// #region Scalable
 
-            @media screen and (max-width: 451px){
-                .fullWidth;
-            }
+		@media screen and (max-width: 1023px) { // Mobile
+			height: 70px;
 
-            @media screen and (min-width: 452px){
-                .float;
-                width: 450px;
-                .horizontalAlign(450px); // Horizontal align Header Content
-            }
+			& > img { // Logo
+				width: 40%;
+				margin: auto 0;
+			}
+		}
 
-            // #endregion
+		@media screen and (min-width: 1024px) { // Non-Mobile
+			height: 100px;
 
-            // #region Header Logo
+			& > img { // Logo
+				height: 60%;
+				margin: auto 100px auto 0;
+			}
 
-            & > div[data-isupportjolla-component="header-logo"]{
-                .float;
-                height: 80px;
-                font-size: 2.5rem; // 2.5x root font size
-                line-height: 80px;
+			& > a {
+				line-height: 100px;
+				margin-right: 5%;
+			}
+		}
 
-                margin-top: 2.5%;
-                margin-bottom: 2.5%;
+		& > img { // Logo
+			display: inline-block;
+		}
 
-                & > img {
-                    max-height: 80px;
-                }
-            }
-
-            // #endregion
-
-            // #region Header Description
-
-            & > div[data-isupportjolla-component="header-description"]{
-                .fullWidth;
-                min-height: 64px;
-                font-size: 1.25rem; // 1.25x root font size
-                text-align: center;
-                line-height: 1.5;
-                margin-bottom: 2.5%;
-
-                & > label {
-                    .fullWidth;
-                    font-size: 2rem; // 2x root font size
-                }
-            }
-
-            // #endregion
-
-            // #region Header Tweet Form Container
-
-            & > div[data-isupportjolla-component="header-tweet"]{
-                .fullWidth;
-                font-size: 1.25rem;
-                text-align: center;
-                margin-bottom: 2.5%;
-            }
-        }
-
-        // #endregion
-    }
+		& > a {
+			display: inline-block;
+			color: @contrastPrimary;
+			font-size: 1.2em;
+			font-weight: light;
+			text-decoration: none;
+		}
+	}
 }
-
-// #endregion

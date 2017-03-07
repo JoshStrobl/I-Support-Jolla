@@ -1,0 +1,49 @@
+// I Support Jolla Views
+
+// #region Directional Specific
+
+body {
+	&:not([dir="rtl"]){ // LTR
+		& > div[data-isupportjolla="view-primary"] { // Primary View
+			margin-right: 5%;
+		}
+	}
+
+	&[dir="rtl"] { // RTL
+		& > div[data-isupportjolla="view-primary"] { // Primary View
+			margin-left: 5%;
+		}
+	}
+}
+
+// #endregion
+
+div[data-isupportjolla="view-container"] { // Container
+	&:extend(.contentPadding);
+
+	@media screen and (max-width: 1023px) { // Mobile
+		flex-direction: column;
+
+		& > div[data-isupportjolla="view-primary"] { // Primary View
+			.fullWidth;
+
+			& > img { // Inner images
+				.fullWidth;
+			}
+		}
+
+		& > div[data-isupportjolla="view-secondary"] { // Secondary View
+			.fullWidth;
+		}
+	}
+
+	@media screen and (min-width: 1024px) { // Non-Mobile
+		& > div[data-isupportjolla="view-primary"] { // Primary View
+			width: 70%;
+		}
+
+		& > div[data-isupportjolla="view-secondary"] { // Secondary View
+			width: 25%;
+		}
+	}
+}
